@@ -1,0 +1,93 @@
+.header {
+    padding: 1%;
+    text-align: center;
+    background: #666967;
+    color: #B1B5B2;
+    font-size: 10px;
+}
+.bg{
+    background-image: url("images/Coldplaypage1wpp.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+ul.sort{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    margin: 0 3%;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-youtube{
+    color: white;
+}
+.fa-reddit{
+    color: white;
+}
+.fa{
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-twitter:hover {
+    background-color:#55ACEE;
+    transition-duration: 0.5s;
+}
+.fa-facebook:hover {
+    background-color: #3B5998;
+    transition-duration: 0.5s;
+}
+.fa-youtube:hover{
+    background-color: #bb0000;
+    transition-duration: 0.5s;
+}
+.fa-reddit:hover{
+    background-color: #ff5700;
+    transition-duration: 0.5s;
+}
+.underline{
+    text-decoration: none;
+    color: #B1B5B2;
+}
+.underline:hover{
+    transition-duration: 0.5s;
+    color: #94E3B8;
+}
+.centre{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 400%;
+    color: #232733;
+}
+.buttens1{
+    margin-top: 15%;
+    width: 10%;
+    padding: 1%;
+    color: #232733;
+    font-size: 400%;
+}
+.buttens2{
+    margin-top: 15%;
+    width: 10%;
+    padding: 1%;
+    color: #232733;
+    font-size: 400%;
+}
+.flexes{
+    display: flex;
+    flex-direction: row;
+}
