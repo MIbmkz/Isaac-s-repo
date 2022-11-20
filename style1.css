@@ -11,6 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 } 
 ul.sort{
     list-style-type: none;
@@ -72,20 +73,6 @@ li{
     font-family: 'Lobster', cursive;
     font-size: 400%;
     color: #232733;
-}
-.buttens1{
-    margin-top: 15%;
-    width: 10%;
-    padding: 1%;
-    color: #232733;
-    font-size: 400%;
-}
-.buttens2{
-    margin-top: 15%;
-    width: 10%;
-    padding: 1%;
-    color: #232733;
-    font-size: 400%;
 }
 .flexes{
     display: flex;

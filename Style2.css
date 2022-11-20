@@ -48,7 +48,7 @@ li{
 }
 
 .flex div:last-child {
-    margin: 5rem;
+    margin: 2rem;
     flex: 2;
 }
 
@@ -67,9 +67,34 @@ li{
 }
 .flex:first-of-type div:first-child {
     background-image: url("images/descriptionpageimage.jpg");
-    border: 3px solid #5E5D51;
+    border: 3px dotted #5E5D51;
     margin-left: 5%;
 }
 .column{
     margin-top: 7%;
+}
+.ffont{
+    font-family: 'Poppins', sans-serif;
+}
+.readm{
+    text-decoration: none;
+    color: #feecf9;
+    padding: 0.5%;
+    background-color: #fb3a64;
+    border: 1px solid #fb3a64;
+    font-family: 'Karla', sans-serif;   
+}
+.readm:hover{
+    background-color: #feecf9;
+    color: #fb3a64;
+    transition-duration: 0.4s;
+}
+.box{
+    z-index: -1;
+    border: 9px solid #5E5D51;
+    width: 29%;
+    height: 55%;            
+    position: absolute;
+    top: 25%;
+    left: 3%;
 }
