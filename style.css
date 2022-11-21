@@ -1,0 +1,250 @@
+/* MainPage style */
+.header1{
+    padding: 1%;
+    text-align: center;
+    background: #666967;
+    color: #B1B5B2;
+    font-size: 10px;
+}
+.bg1{
+    background-image: url("images/Coldplaypage1wpp.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+} 
+ul.sort1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.li1{
+    display: inline-block;
+    margin: 0 3%;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-youtube{
+    color: white;
+}
+.fa-reddit{
+    color: white;
+}
+.fa{
+    padding: 20px;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-twitter:hover {
+    background-color:#55ACEE;
+    transition-duration: 0.5s;
+}
+.fa-facebook:hover {
+    background-color: #3B5998;
+    transition-duration: 0.5s;
+}
+.fa-youtube:hover{
+    background-color: #bb0000;
+    transition-duration: 0.5s;
+}
+.fa-reddit:hover{
+    background-color: #ff5700;
+    transition-duration: 0.5s;
+}
+.underline{
+    text-decoration: none;
+    color: #B1B5B2;
+}
+.underline:hover{
+    transition-duration: 0.5s;
+    color: #94E3B8;
+}
+.centre{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 400%;
+    color: #232733;
+}
+.flexes{
+    display: flex;
+    flex-direction: row;
+}
+.buttens2{
+    font-size: 50px;
+    padding: 2%;
+}
+/* About1 Style*/
+.buttens3{
+    font-size: 50px;
+    padding: 2%;
+    position: absolute;
+    margin-left:92%;
+}
+.bg2{
+    background-color: #DBEBBE;
+} 
+.header2{
+    padding: 1%;
+    text-align: center;
+    background: #6B4B4B;
+    color: #B8B8B8;
+    font-size: 11px;
+    font-family: 'Lobster', cursive;
+}
+ul.sort2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.li2{
+    display: inline-block;
+    margin: 0 12%;
+}
+.change{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+@media all and (max-width: 400px) {
+    .flex { flex-direction: column; } 
+    .flex div:first-child { min-height: 200px; }
+}
+
+@media all and (max-width: 600px) {
+    .flex div { flex: 1 !important; }
+}
+
+.flex {
+    margin: 0;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.flex div:first-child {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex div:last-child {
+    margin: 2rem;
+    flex: 2;
+}
+
+.flex h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+.flex p {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.flex p:last-of-type {
+    margin-bottom: 0;
+}
+.flex:first-of-type div:first-child {
+    background-image: url("images/descriptionpageimage.jpg");
+    border: 3px dotted #5E5D51;
+    margin-left: 5%;
+}
+.column{
+    margin-top: 7%;
+}
+.ffont{
+    font-family: 'Poppins', sans-serif;
+}
+.readm{
+    text-decoration: none;
+    color: #feecf9;
+    padding: 0.5%;
+    background-color: #fb3a64;
+    border: 1px solid #fb3a64;
+    font-family: 'Karla', sans-serif;   
+}
+.readm:hover{
+    background-color: #feecf9;
+    color: #fb3a64;
+    transition-duration: 0.4s;
+}
+.box{
+    z-index: -1;
+    border: 9px solid #5E5D51;
+    width: 29%;
+    height: 55%;            
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+/* About2 Css */
+.ffont2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.bg3{
+    background-color:#323630  ;
+}
+.header3{
+    padding: 1%;
+    text-align: center;
+    background: #323630;
+    color: #B8B8B8;
+    font-size: 11px;
+    font-family: 'Lobster', cursive;
+}
+ul.sort3{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.li3{
+    display: inline-block;
+    margin: 0 12%;
+}
+.change2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.img1{
+    width:100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Secular One', sans-serif;
+    color: #DEDDBF;
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.boxes{
+    width: 100%;
+}
+.boxes p{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    color: #B8B8B8;
+}
+
+
+  
