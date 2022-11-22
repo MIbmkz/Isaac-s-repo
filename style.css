@@ -19,6 +19,14 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
+body {
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+}
+body.fade {
+    opacity: 0;
+}
 /* MainPage style */
 .header1{
     padding: 1%;
@@ -99,6 +107,7 @@ ul.sort1{
 .flexes{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .fa-arrow-left{
     color: red
@@ -304,5 +313,176 @@ ul.sort3{
     transition-duration: 0.4s;
 }
 /* Memberinfo style */
-
-  
+.buttens5{
+    font-size: 50px;
+    padding: 1%;
+}
+.buttens6{
+    font-size: 50px;
+    padding: 1%;
+}
+.bg4{
+    background-image: url("images/Stars\ background.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+} 
+.header4{
+    padding: 1%;
+    text-align: center;
+    background: #6B4B4B;
+    color: #B8B8B8;
+    font-size: 11px;
+    font-family: 'Lobster', cursive;
+}
+ul.sort4{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.li4{
+    display: inline-block;
+    margin: 0 12%;
+}
+/* Flexboxes column styling */
+/* Flexbox 1 */
+.flex1{
+    margin: 0;
+    display: flex;
+    border: 5px solid #333;
+}
+.flex1 div:first-child{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+.flex1 div:last-child{
+    margin: 2rem;
+    flex: 2;
+}
+.flex1 h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+.flex1 p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.flex1 p:last-of-type{
+    margin-bottom: 0;
+}
+.flex1:first-of-type div:first-child{
+    background-image: url("images/ChrisMartin.webp");
+}
+/* Flexbox 2 */
+.flex2{
+    margin: 0;
+    display: flex;
+    border: 5px solid #333;
+}
+.flex2 div:first-child{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+.flex2 div:last-child{
+    margin: 2rem;
+    flex: 2;
+}
+.flex2 h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+.flex2 p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.flex2 p:last-of-type{
+    margin-bottom: 0;
+}
+.flex2:first-of-type div:first-child{
+    background-image: url("images/Coldplaypage1wpp.jpg");
+}
+.flex2:nth-child(odd){
+    flex-direction: row-reverse;
+}
+/* Flexbox 3 */
+.flex3{
+    margin: 0;
+    display: flex;
+    border: 5px solid #333;
+}
+.flex3 div:first-child{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+.flex3 div:last-child{
+    margin: 2rem;
+    flex: 2;
+}
+.flex3 h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+.flex3 p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.flex3 p:last-of-type{
+    margin-bottom: 0;
+}
+.flex3:first-of-type div:first-child{
+    background-image: url("images/Coldplaypage1wpp.jpg");
+}
+/* Flexbox 4 */
+.flex4{
+    margin: 0;
+    display: flex;
+    border: 5px solid #333;
+}
+.flex4 div:first-child{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+.flex4 div:last-child{
+    margin: 2rem;
+    flex: 2;
+}
+.flex4 h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+.flex4 p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.flex4 p:last-of-type{
+    margin-bottom: 0;
+}
+.flex4:first-of-type div:first-child{
+    background-image: url("images/Coldplaypage1wpp.jpg");
+}
+.flex4:nth-child(odd){
+    flex-direction: row-reverse;
+}
+/* Normal styling Memberinfo */
