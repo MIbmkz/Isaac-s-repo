@@ -31,9 +31,8 @@ body.fade {
 .header1{
     padding: 1%;
     text-align: center;
-    background: #0A1A8C;
-    color: #B1B5B2;
-    font-size: 10px;
+    background: #074A6E;
+    color: white;
 }
 .bg1{
     background-image: url("images/bird.jpg");
@@ -89,7 +88,7 @@ ul.sort1{
 }
 .underline{
     text-decoration: none;
-    color: #B1B5B2;
+    color: white;
 }
 .underline:hover{
     transition-duration: 0.5s;
@@ -102,7 +101,7 @@ ul.sort1{
     padding: 0;
     font-family: 'Lobster', cursive;
     font-size: 400%;
-    color: #D94E1A;
+    color: #8F7107;
 }
 .flexes{
     display: flex;
@@ -173,7 +172,7 @@ ul.sort2{
 }
 
 @media all and (max-width: 600px) {
-    .flex div { flex: 1 !important; }
+    .flex div { flex: 1; }
 }
 
 .flex {
@@ -322,12 +321,7 @@ ul.sort3{
     padding: 1%;
 }
 .bg4{
-    background-image: url("images/Stars\ background.gif");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+    background-color: white;
 } 
 .header4{
     padding: 1%;
@@ -351,7 +345,6 @@ ul.sort4{
 .flex1{
     margin: 0;
     display: flex;
-    border: 5px solid #333;
 }
 .flex1 div:first-child{
     flex: 1;
@@ -363,13 +356,13 @@ ul.sort4{
     flex: 2;
 }
 .flex1 h3{
-    color: white;
+    color: black;
     font-size: 1.5rem;
     margin-top: 0;
     font-weight: 400;
 }
 .flex1 p{
-    color: white;
+    color: black;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 400;
@@ -379,12 +372,20 @@ ul.sort4{
 }
 .flex1:first-of-type div:first-child{
     background-image: url("images/ChrisMartin.webp");
+    border: 3px dotted #5E5D51;
+}
+@media all and (max-width: 400px) {
+    .flex1 { flex-direction: column; } 
+    .flex1 div:first-child { min-height: 200px; }
+}
+
+@media all and (max-width: 600px) {
+    .flex1 div { flex: 1; }
 }
 /* Flexbox 2 */
 .flex2{
     margin: 0;
     display: flex;
-    border: 5px solid #333;
 }
 .flex2 div:first-child{
     flex: 1;
@@ -396,13 +397,13 @@ ul.sort4{
     flex: 2;
 }
 .flex2 h3{
-    color: white;
+    color: black;
     font-size: 1.5rem;
     margin-top: 0;
     font-weight: 400;
 }
 .flex2 p{
-    color: white;
+    color: black;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 400;
@@ -411,16 +412,27 @@ ul.sort4{
     margin-bottom: 0;
 }
 .flex2:first-of-type div:first-child{
-    background-image: url("images/Coldplaypage1wpp.jpg");
+    background-image: url("images/Guyberryman.webp");
+    border: 3px dotted #5E5D51;
 }
 .flex2:nth-child(odd){
     flex-direction: row-reverse;
+}
+@media all and (max-width: 400px) {
+    .flex2:nth-child(odd){
+        flex-direction: column;
+    }
+    .flex2 { flex-direction: column; } 
+    .flex2 div:first-child { min-height: 200px; }
+}
+
+@media all and (max-width: 600px) {
+    .flex2 div { flex: 1; }
 }
 /* Flexbox 3 */
 .flex3{
     margin: 0;
     display: flex;
-    border: 5px solid #333;
 }
 .flex3 div:first-child{
     flex: 1;
@@ -432,13 +444,13 @@ ul.sort4{
     flex: 2;
 }
 .flex3 h3{
-    color: white;
+    color: black;
     font-size: 1.5rem;
     margin-top: 0;
     font-weight: 400;
 }
 .flex3 p{
-    color: white;
+    color: black;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 400;
@@ -447,13 +459,21 @@ ul.sort4{
     margin-bottom: 0;
 }
 .flex3:first-of-type div:first-child{
-    background-image: url("images/Coldplaypage1wpp.jpg");
+    background-image: url("images/Jonnybuckland.webp");
+    border: 3px dotted #5E5D51;
+}
+@media all and (max-width: 400px) {
+    .flex3 { flex-direction: column; } 
+    .flex3 div:first-child { min-height: 200px; }
+}
+
+@media all and (max-width: 600px) {
+    .flex3 div { flex: 1;}
 }
 /* Flexbox 4 */
 .flex4{
     margin: 0;
     display: flex;
-    border: 5px solid #333;
 }
 .flex4 div:first-child{
     flex: 1;
@@ -465,13 +485,13 @@ ul.sort4{
     flex: 2;
 }
 .flex4 h3{
-    color: white;
+    color: black;
     font-size: 1.5rem;
     margin-top: 0;
     font-weight: 400;
 }
 .flex4 p{
-    color: white;
+    color: black;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 400;
@@ -480,9 +500,21 @@ ul.sort4{
     margin-bottom: 0;
 }
 .flex4:first-of-type div:first-child{
-    background-image: url("images/Coldplaypage1wpp.jpg");
+    background-image: url("images/Willchampion.jpg");
+    border: 3px dotted #5E5D51;
 }
 .flex4:nth-child(odd){
     flex-direction: row-reverse;
+}
+@media all and (max-width: 400px) {
+    .flex4:nth-child(odd){
+        flex-direction: column;
+    }
+    .flex4 { flex-direction: column; } 
+    .flex4 div:first-child { min-height: 200px; }
+}
+
+@media all and (max-width: 600px) {
+    .flex4 div { flex: 1;}
 }
 /* Normal styling Memberinfo */
