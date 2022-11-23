@@ -325,6 +325,7 @@ ul.sort3{
 } 
 .header4{
     padding: 1%;
+    margin-bottom: 3%;
     text-align: center;
     background: #6B4B4B;
     color: #B8B8B8;
@@ -343,6 +344,7 @@ ul.sort4{
 /* Flexboxes column styling */
 /* Flexbox 1 */
 .flex1{
+    margin-top: 5%;
     margin: 0;
     display: flex;
 }
@@ -372,7 +374,16 @@ ul.sort4{
 }
 .flex1:first-of-type div:first-child{
     background-image: url("images/ChrisMartin.webp");
-    border: 3px dotted #5E5D51;
+    border: 3px dotted black;
+}
+.box1{
+    z-index: -1;
+    border: 9px solid black;
+    width: 27%;
+    height: 40%;            
+    position: absolute;
+    top: 17%;
+    left: 4%;
 }
 @media all and (max-width: 400px) {
     .flex1 { flex-direction: column; } 
@@ -413,10 +424,19 @@ ul.sort4{
 }
 .flex2:first-of-type div:first-child{
     background-image: url("images/Guyberryman.webp");
-    border: 3px dotted #5E5D51;
+    border: 3px dotted black;
 }
 .flex2:nth-child(odd){
     flex-direction: row-reverse;
+}
+.box2{
+    z-index: -1;
+    border: 9px solid black;
+    width: 27%;
+    height: 45%;            
+    position: absolute;
+    top: 60%;
+    left: 68%;
 }
 @media all and (max-width: 400px) {
     .flex2:nth-child(odd){
@@ -460,7 +480,16 @@ ul.sort4{
 }
 .flex3:first-of-type div:first-child{
     background-image: url("images/Jonnybuckland.webp");
-    border: 3px dotted #5E5D51;
+    border: 3px dotted black;
+}
+.box3{
+    z-index: -1;
+    border: 9px solid black;
+    width: 27%;
+    height: 45%;            
+    position: absolute;
+    top: 108%;
+    left: 4%;
 }
 @media all and (max-width: 400px) {
     .flex3 { flex-direction: column; } 
@@ -501,10 +530,19 @@ ul.sort4{
 }
 .flex4:first-of-type div:first-child{
     background-image: url("images/Willchampion.jpg");
-    border: 3px dotted #5E5D51;
+    border: 3px dotted black;
 }
 .flex4:nth-child(odd){
     flex-direction: row-reverse;
+}
+.box4{
+    z-index: -1;
+    border: 9px solid black;
+    width: 27%;
+    height: 46%;            
+    position: absolute;
+    top: 154%;
+    left: 68%;
 }
 @media all and (max-width: 400px) {
     .flex4:nth-child(odd){
