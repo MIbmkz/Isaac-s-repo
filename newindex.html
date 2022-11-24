@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class = "A">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "Stylesheet" href = "normalize.css" type = "text/css">
+    <link rel = "Stylesheet" href = "style.css" type = "text/css">
+    <script src="Java.js" defer></script>
+    <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ColdPlay Website</title>
+    <style>
+        /* button starts here */
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins' , sans-serif;
+            box-sizing: border-box;
+        }
+        .size{
+            width: 100%;
+            min-height: 100vh;
+            background-image: url("images/Performingbg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #525252;
+        }
+        .user-pic:hover{
+            opacity: 0.5;
+        }
+        .nav1{
+            background: #747C82;
+            width: 100%;
+            padding: 10px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .icon{
+            width: 120px;
+        }
+        .user-pic{
+            width: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .nav1 ul{
+            width: 100%;
+            text-align: right;
+        }
+        .nav1 ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        .nav1 ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .sub-menu-wrap{
+            position: absolute;
+            top: 100%;
+            right: 10%;
+            width: 320px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s;
+        }
+        .sub-menu-wrap.open-menu{
+            max-height: 400px;
+        }
+        .sub-menu{
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+        }
+        .user-info{
+            display: flex;
+            align-items: center;
+        }
+        .user-info h3{
+            font-weight: 500;
+        }
+        .user-info img{
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .sub-menu hr{
+            border: 0;
+            height: 1px;
+            width: 100%;
+            background: #ccc;
+            margin: 15px 0 10px;
+        }
+        .sub-menu-link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #525252;
+            margin: 12px 0;
+        }
+        .sub-menu-link p{
+            width: 100%;
+        }
+        .sub-menu-link span{
+            font-size: 22px;
+            transition: transform 0.5s;
+        }
+        .sub-menu-link:hover span{
+            transform: translateX(5px);
+        }
+        .sub-menu-link:hover p{
+            font-weight: 600;
+        }
+        /* ends here */
+        .fa-twitter {
+            color: white;
+        }
+        .fa-facebook {
+            color: white;
+        }
+        .fa-youtube{
+            color: white;
+        }
+        .fa-reddit{
+            color: white;
+        }
+        .fa-twitter{
+            padding: 25px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-facebook{
+            padding: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-youtube{
+            padding: 25px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-reddit{
+            padding: 25px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-twitter:hover {
+            background-color:#55ACEE;
+            transition-duration: 0.5s;
+        }
+        .fa-facebook:hover {
+            background-color: #3B5998;
+            transition-duration: 0.5s;
+        }
+        .fa-youtube:hover{
+            background-color: #bb0000;
+            transition-duration: 0.5s;
+        }
+        .fa-reddit:hover{
+            background-color: #ff5700;
+            transition-duration: 0.5s;
+        }
+        .centre{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: 'Lobster', cursive;
+            font-size: 400%;
+            color: #a43552;
+        }
+        .fa-solid{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body class = "animate-in beforeunload">
+    <div class="size">
+        <nav class = "nav1">
+            <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
+            <ul>
+                <li><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
+                <li><a href="https://www.facebook.com/coldplay/" class="z fa fa-facebook"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" class="z fa fa-youtube"></a></li>
+                <li><a href="https://www.reddit.com/r/Coldplay/" class="z fa fa-reddit"></a></li></li>
+            </ul>
+            <img src = "images/icon.jpg" class = "user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id = "subMenu">
+                <div class="sub-menu">
+
+                    <hr>
+
+                    <a href = "#" class = "sub-menu-link">
+                        
+                        <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
+                        <span>></span>
+                    </a>
+                    <a href = "#" class = "sub-menu-link">
+                        <p><i class="fa-solid fa-people-group"></i>&nbsp;&nbsp;&nbsp;About Coldplay</p>
+                        <span>></span>
+                    </a>
+                    <a href = "#" class = "sub-menu-link">
+                        <p>&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Members</p>
+                        <span>></span>
+                    </a>
+                    <a href = "#" class = "sub-menu-link">                   
+                        <p><i class="fa-solid fa-music"></i>&nbsp;&nbsp;&nbsp;&nbsp;Music</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <div class = "centre">
+            <h1 style = "font-family:'Lobster', cursive;">COLDPLAY</h1>
+            <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A 4-man Band</h5>
+        </div>
+    </div>
+</html>

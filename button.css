@@ -87,9 +87,6 @@
 .sub-menu-link p{
     width: 100%;
 }
-/* .sub-menu link img{
-    see 8:50 of video
-} */
 .sub-menu-link span{
     font-size: 22px;
     transition: transform 0.5s;
@@ -99,4 +96,38 @@
 }
 .sub-menu-link:hover p{
     font-weight: 600;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-youtube{
+    color: white;
+}
+.fa-reddit{
+    color: white;
+}
+.fa{
+    padding: 30px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-twitter:hover {
+    background-color:#55ACEE;
+    transition-duration: 0.5s;
+}
+.fa-facebook:hover {
+    background-color: #3B5998;
+    transition-duration: 0.5s;
+}
+.fa-youtube:hover{
+    background-color: #bb0000;
+    transition-duration: 0.5s;
+}
+.fa-reddit:hover{
+    background-color: #ff5700;
+    transition-duration: 0.5s;
 }

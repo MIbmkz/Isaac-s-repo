@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Java.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "Stylesheet" href = "normalize.css" type = "text/css">
+    <link rel = "Stylesheet" href = "style.css" type = "text/css">
+    <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <title>Page 2</title>
+    <style>
+        .buttens3{
+            font-size: 50px;
+            padding: 1%;
+            position: absolute;
+            margin-right:90%;
+        }
+        .buttens4{
+            font-size: 50px;
+            padding: 1%;
+            position: absolute;
+            margin-left:94%;
+        }
+        .bg2{
+            background-color: #202c36;
+        } 
+        .header2{
+            padding: 1%;
+            text-align: center;
+            background: #747C82;
+            color: white;
+            font-size: 11px;
+            font-family: 'Lobster', cursive;
+        }
+        ul.sort2{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .li2{
+            display: inline-block;
+            margin: 0 12%;
+        }
+        .change{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .flex {
+            margin: 0;
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        .flex div:first-child {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex div:last-child {
+            margin: 2rem;
+            flex: 2;
+        }
+
+        .flex h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        .flex p {
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+            color:white;
+        }
+        .flex p:last-of-type {
+            margin-bottom: 0;
+        }
+        .flex:first-of-type div:first-child {
+            background-image: url("images/descriptionpageimage.jpg");
+            border: 3px dotted #a43552;
+            margin-left: 5%;
+        }
+        .column{
+            margin-top: 7%;
+        }
+        .ffont{
+            font-family: 'Poppins', sans-serif;
+        }
+        .readm{
+            text-decoration: none;
+            color: #feecf9;
+            padding: 0.5%;
+            background-color: #fb3a64;
+            border: 1px solid #fb3a64;
+            font-family: 'Karla', sans-serif;   
+        }
+        .readm:hover{
+            background-color: #feecf9;
+            color: #fb3a64;
+            transition-duration: 0.4s;
+        }
+        .box{
+            z-index: -1;
+            border: 9px solid #a43552;
+            width: 29%;
+            height: 55%;            
+            position: absolute;
+            top: 25%;
+            left: 3%;
+        }
+        @media all and (max-width: 400px) {
+            .flex { flex-direction: column; } 
+            .flex div:first-child { min-height: 200px; }
+        }
+
+        @media all and (max-width: 600px) {
+            .flex div { flex: 1; }
+        }
+
+    </style>
+</head>
+<body class = "bg2 animate-in beforeunload">
+    <div class="header2">
+        <ul class = "sort2">
+            <li class = "li2"><h1>COLD PLAY</h1></li>
+            <li class = "li2"><a href="https://twitter.com/coldplay?lang=en" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/coldplay/" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" class="fa fa-youtube"></a>
+                <a href="https://www.reddit.com/r/Coldplay/" class="fa fa-reddit"></a></li>
+            </li>
+        </ul>
+    </div>
+    <div class = "flexes">
+        <div class = "buttens3">
+            <a href = "Index.html"><i class="fa-solid fa-arrow-left "></i></a>
+        </div>
+        <div class="column">
+            <div class = "box"></div>
+            <figure class="flex">
+                <div></div>
+                <div>
+                    <h1 style = "font-family: 'Lobster', cursive; color:white;"><u>About Coldplay</u></h1>
+                    <p class = "ffont">Coldplay was formed in 1998 at University College, London, with the pairing of pianist-vocalist Chris Martin (b. March 2, 1977, Exeter, England) and guitarist Jonny Buckland (b. September 11, 1977, London). The band was later filled out with fellow students Guy Berryman (b. April 12, 1978, Kirkcaldy, Scotland) on bass and Will Champion (b. July 31, 1978, Southampton, England), a guitarist who later switched to drums. Coldplay penetrated the U.K. Top 100 in 1999 with the single “Brothers & Sisters” on the independent Fierce Panda label before signing with major label Parlaphone.</p><br>
+                    <a class = "readm" href = "About2.html">Read more</a>
+                </div>
+            </figure>   
+        </div> 
+        <div class = "buttens4">
+            <a href = "Memberinfo.html"><i class="fa-solid fa-arrow-right"></i></a>
+        </div> 
+    </div> 
+</body>
+</html>
