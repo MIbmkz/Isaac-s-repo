@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class = "A">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "Stylesheet" href = "normalize.css" type = "text/css">
+    <link rel = "Stylesheet" href = "style.css" type = "text/css">
+    <script src="Java.js" defer></script>
+    <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>ColdPlay Website</title>
+    <style>
+        /* button starts here */
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins' , sans-serif;
+            box-sizing: border-box;
+        }
+        .size{
+            width: 100%;
+            min-height: 100vh;
+            background-color:#202c36 ;
+            color: #525252;
+        }
+        .user-pic:hover{
+            opacity: 0.5;
+        }
+        .nav1{
+            margin-bottom: 3%;
+            background: #747C82;
+            width: 100%;
+            padding: 10px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .icon{
+            width: 120px;
+        }
+        .user-pic{
+            width: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .nav1 ul{
+            width: 100%;
+            text-align: right;
+        }
+        .nav1 ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        .nav1 ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .sub-menu-wrap{
+            position: absolute;
+            top: 100%;
+            right: 10%;
+            width: 320px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s;
+        }
+        .sub-menu-wrap.open-menu{
+            max-height: 400px;
+        }
+        .sub-menu{
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+        }
+        .user-info{
+            display: flex;
+            align-items: center;
+        }
+        .user-info h3{
+            font-weight: 500;
+        }
+        .user-info img{
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .sub-menu hr{
+            border: 0;
+            height: 1px;
+            width: 100%;
+            background: #ccc;
+            margin: 15px 0 10px;
+        }
+        .sub-menu-link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #525252;
+            margin: 12px 0;
+        }
+        .sub-menu-link p{
+            width: 100%;
+        }
+        .sub-menu-link span{
+            font-size: 22px;
+            transition: transform 0.5s;
+        }
+        .sub-menu-link:hover span{
+            transform: translateX(5px);
+        }
+        .sub-menu-link:hover p{
+            font-weight: 600;
+        }
+        /* ends here */
+        .fa-twitter {
+            color: white;
+        }
+        .fa-facebook {
+            color: white;
+        }
+        .fa-youtube{
+            color: white;
+        }
+        .fa-reddit{
+            color: white;
+        }
+        .fa-twitter{
+            padding: 25px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-facebook{
+            padding: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-youtube{
+            padding: 25px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-reddit{
+            padding: 25px;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-twitter:hover {
+            background-color:#55ACEE;
+            transition-duration: 0.5s;
+        }
+        .fa-facebook:hover {
+            background-color: #3B5998;
+            transition-duration: 0.5s;
+        }
+        .fa-youtube:hover{
+            background-color: #bb0000;
+            transition-duration: 0.5s;
+        }
+        .fa-reddit:hover{
+            background-color: #ff5700;
+            transition-duration: 0.5s;
+        }
+        .centre{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: 'Lobster', cursive;
+            font-size: 400%;
+            color: #a43552;
+        }
+        .fa-solid{
+            font-size: 30px;
+        }
+        .ffffont{
+            font-family: 'Mulish', sans-serif;
+            width: 90%;
+            margin-left: 5%;
+        }
+        /* Flexboxes column styling */
+        /* Flexbox 1 */
+        .flex1{
+            margin-top: 5%;
+            margin: 0;
+            display: flex;
+        }
+        .flex1 div:first-child{
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        .flex1 div:last-child{
+            margin: 2rem;
+            flex: 2;
+        }
+        .flex1 h3{
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        .flex1 p{
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .flex1 p:last-of-type{
+            margin-bottom: 0;
+        }
+        .flex1:first-of-type div:first-child{
+            background-image: url("images/ChrisMartin.webp");
+            z-index: 2;
+        }
+        .box1{
+            z-index: 1;
+            border: 9px solid #a43552;
+            width: 29%;
+            height: 40%;            
+            position: absolute;
+            top: 21%;
+            left: 3%;
+        }
+        @media all and (max-width: 400px) {
+            .box1{
+                opacity: 0;
+            }
+            .flex1 { flex-direction: column; } 
+            .flex1 div:first-child { min-height: 200px; }
+        }
+
+        @media all and (max-width: 600px) {
+            .flex1 div { flex: 1; }
+        }
+        /* Flexbox 2 */
+        .flex2{
+            margin: 0;
+            display: flex;
+        }
+        .flex2 div:first-child{
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        .flex2 div:last-child{
+            margin: 2rem;
+            flex: 2;
+        }
+        .flex2 h3{
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        .flex2 p{
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .flex2 p:last-of-type{
+            margin-bottom: 0;
+        }
+        .flex2:first-of-type div:first-child{
+            background-image: url("images/Guyberryman.webp");
+            z-index: 2;
+        }
+        .flex2:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+        .box2{
+            z-index: 1;
+            border: 9px solid #a43552;
+            width: 29%;
+            height: 45%;            
+            position: absolute;
+            top: 60%;
+            left: 68%;
+        }
+        @media all and (max-width: 400px) {
+            .box2{
+                opacity: 0;
+            }
+            .flex2:nth-child(odd){
+                flex-direction: column;
+            }
+            .flex2 { flex-direction: column; } 
+            .flex2 div:first-child { min-height: 200px; }
+        }
+
+        @media all and (max-width: 600px) {
+            .flex2 div { flex: 1; }
+        }
+        /* Flexbox 3 */
+        .flex3{
+            margin: 0;
+            display: flex;
+        }
+        .flex3 div:first-child{
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        .flex3 div:last-child{
+            margin: 2rem;
+            flex: 2;
+        }
+        .flex3 h3{
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        .flex3 p{
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .flex3 p:last-of-type{
+            margin-bottom: 0;
+        }
+        .flex3:first-of-type div:first-child{
+            background-image: url("images/Jonnybuckland.webp");
+            z-index: 2;
+        }
+        .box3{
+            z-index: 1;
+            border: 9px solid #a43552;
+            width: 29%;
+            height: 45%;            
+            position: absolute;
+            top: 103%;
+            left: 3%;
+        }
+        @media all and (max-width: 400px) {
+            .box3{
+                opacity: 0;
+            }
+            .flex3 { flex-direction: column; } 
+            .flex3 div:first-child { min-height: 200px; }
+        }
+
+        @media all and (max-width: 600px) {
+            .flex3 div { flex: 1;}
+        }
+        /* Flexbox 4 */
+        .flex4{
+            margin: 0;
+            display: flex;
+        }
+        .flex4 div:first-child{
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        .flex4 div:last-child{
+            margin: 2rem;
+            flex: 2;
+        }
+        .flex4 h3{
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        .flex4 p{
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .flex4 p:last-of-type{
+            margin-bottom: 0;
+        }
+        .flex4:first-of-type div:first-child{
+            background-image: url("images/Willchampion.jpg");
+            z-index: 2;
+        }
+        .flex4:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+        .box4{
+            z-index: 1;
+            border: 9px solid #a43552;
+            width: 29%;
+            height: 45%;            
+            position: absolute;
+            top: 146%;
+            left: 68%;
+        }
+        @media all and (max-width: 400px) {
+            .box4{
+                opacity: 0;
+            }
+            .flex4:nth-child(odd){
+                flex-direction: column;
+            }
+            .flex4 { flex-direction: column; } 
+            .flex4 div:first-child { min-height: 200px; }
+        }
+
+        @media all and (max-width: 600px) {
+            .flex4 div { flex: 1;}
+        }
+    </style>
+</head>
+<body class = "animate-in beforeunload">
+    <div class="size">
+        <nav class = "nav1">
+            <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
+            <ul>
+                <li><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
+                <li><a href="https://www.facebook.com/coldplay/" class="z fa fa-facebook"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" class="z fa fa-youtube"></a></li>
+                <li><a href="https://www.reddit.com/r/Coldplay/" class="z fa fa-reddit"></a></li></li>
+            </ul>
+            <img src = "images/icon.jpg" class = "user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id = "subMenu">
+                <div class="sub-menu">
+
+                    <hr>
+
+                    <a href = "newindex.html" class = "sub-menu-link">
+                        
+                        <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
+                        <span>></span>
+                    </a>
+                    <a href = "newabout.html" class = "sub-menu-link">
+                        <p><i class="fa-solid fa-people-group"></i>&nbsp;&nbsp;&nbsp;About Coldplay</p>
+                        <span>></span>
+                    </a>
+                    <a href = "Newmemberinfo.html" class = "sub-menu-link">
+                        <p>&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Members</p>
+                        <span>></span>
+                    </a>
+                    <a href = "#" class = "sub-menu-link">                   
+                        <p><i class="fa-solid fa-music"></i>&nbsp;&nbsp;&nbsp;&nbsp;Music</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <div class = "ffffont">
+            <div class="box1"></div>
+            <div class="column1">
+                <figure class="flex1">
+                    <div></div>
+                    <div>
+                        <h3><B>Chris Martin</B></h3>
+                        <p>Christopher Anthony John Martin (born 2 March 1977) is an English singer-songwriter and musician. He is best known as the lead vocalist, pianist, rhythm guitarist and co-founder of the rock band Coldplay.Renamed Coldplay in 1998, they found worldwide fame with the release of the song "Yellow" in 2000, receiving acclaim for albums such as A Rush of Blood to the Head (2002), Viva la Vida or Death and All His Friends (2008) and others. He won seven Grammy Awards and nine Brit Awards as part of the band. </p>
+                    </div>
+                </figure>   
+            </div>
+            <div class="box2"></div>
+            <div class="column2">
+                <figure class="flex2">
+                    <div></div>
+                    <div>
+                        <h3><b>Guy Berryman</b></h3>
+                        <p>Guy Rupert Berryman (born 12 April 1978) is a Scottish musician, songwriter and producer, best known as the bassist of the rock band Coldplay and electronic supergroup Apparatjik. Raised in Kirkcaldy, he began to play bass from an early age, drawing influence from acts such as James Brown, Kool & the Gang and The Funk Brothers. In 2020, he launched an utilitarian-inspired fashion label named Applied Art Forms, working as its creative director and designer.Berryman joined Coldplay with Chris Martin, Jonny Buckland and Will Champion at University College London, where he enrolled on a mechanical engineering degree but dropped out.</p>
+                    </div>
+                </figure>   
+            </div>
+            <div class="box3"></div>
+            <div class="column3">
+                <figure class="flex3">
+                    <div></div>
+                    <div>
+                        <h3><b>Johnny Buckland</b></h3>
+                        <p>Jonathan Mark Buckland (born 11 September 1977) is an English-born Welsh musician and songwriter best known as the lead guitarist and co-founder of the rock band Coldplay. Raised in Pantymwyn, he began to play guitar from an early age, being influenced by acts such as The Stone Roses, My Bloody Valentine and U2. Noted for sparse and delicate arrangements, he uses the slide bar and delay pedal with a stylistic chiming and ringing timbre that led to comparisons with the Edge. Buckland has a degree in mathematics and astronomy at University College London, where he formed Coldplay with Chris Martin, Guy Berryman and Will Champion. </p>
+                    </div>
+                </figure>   
+            </div>
+            <div class="box4"></div>
+            <div class="column4">
+                <figure class="flex4">
+                    <div></div>
+                    <div>
+                        <h3><b>Will Champion</b></h3>
+                        <p>William Champion (born 31 July 1978) is an English musician and songwriter best known as the drummer and backing vocalist of the rock band Coldplay. Raised in Southampton, he learned various instruments during his childhood, being influenced by Bob Dylan, Tom Waits, Nick Cave and traditional Irish folk. His energetic drumming style is based on prioritizing the essential elements of a song and he is known to occasionally take lead vocals during live performances. Champion has a degree in anthropology at University College London, where he joined Coldplay with Chris Martin, Jonny Buckland and Guy Berryman.</p>
+                    </div>
+                </figure>   
+            </div>
+        </div>
+    </div>
+</html>
