@@ -26,9 +26,6 @@
             background-color:#202c36 ;
             color: #525252;
         }
-        .user-pic:hover{
-            opacity: 0.5;
-        }
         .nav1{
             margin-bottom: 3%;
             background: #747C82;
@@ -39,145 +36,6 @@
             justify-content: space-between;
             position: relative;
         }
-        .icon{
-            width: 120px;
-        }
-        .user-pic{
-            width: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-left: 30px;
-        }
-        .nav1 ul{
-            width: 100%;
-            text-align: right;
-        }
-        .nav1 ul li{
-            display: inline-block;
-            list-style: none;
-            margin: 10px 20px;
-        }
-        .nav1 ul li a{
-            color: #fff;
-            text-decoration: none;
-        }
-        .nav1 ul li a:hover{
-            color: red;
-            transition-duration: 0.5s;
-        }
-        .sub-menu-wrap{
-            z-index: 4;
-            position: absolute;
-            top: 100%;
-            right: 10%;
-            width: 320px;
-            max-height: 0px;
-            overflow: hidden;
-            transition: max-height 0.5s;
-        }
-        .sub-menu-wrap.open-menu{
-            z-index: 4;
-            max-height: 400px;
-        }
-        .sub-menu{
-            background: #fff;
-            padding: 20px;
-            margin: 10px;
-        }
-        .user-info{
-            display: flex;
-            align-items: center;
-        }
-        .user-info h3{
-            font-weight: 500;
-        }
-        .user-info img{
-            width: 60px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        .sub-menu hr{
-            border: 0;
-            height: 1px;
-            width: 100%;
-            background: #ccc;
-            margin: 15px 0 10px;
-        }
-        .sub-menu-link{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #525252;
-            margin: 12px 0;
-        }
-        .sub-menu-link p{
-            width: 100%;
-        }
-        .sub-menu-link span{
-            font-size: 22px;
-            transition: transform 0.5s;
-        }
-        .sub-menu-link:hover span{
-            transform: translateX(5px);
-        }
-        .sub-menu-link:hover p{
-            font-weight: 600;
-        }
-        /* ends here */
-        .fa-twitter {
-            color: white;
-        }
-        .fa-facebook {
-            color: white;
-        }
-        .fa-youtube{
-            color: white;
-        }
-        .fa-reddit{
-            color: white;
-        }
-        .fa-twitter{
-            padding: 25px;
-            font-size: 17px;
-            text-align: center;
-            text-decoration: none;
-        }
-        .fa-facebook{
-            padding: 25px;
-            padding-left: 30px;
-            padding-right: 30px;
-            font-size: 17px;
-            text-align: center;
-            text-decoration: none;
-        }
-        .fa-youtube{
-            padding: 25px;
-            font-size: 17px;
-            text-align: center;
-            text-decoration: none;
-        }
-        .fa-reddit{
-            padding: 25px;
-            font-size: 17px;
-            text-align: center;
-            text-decoration: none;
-        }
-        .fa-twitter:hover {
-            background-color:#55ACEE;
-            transition-duration: 0.5s;
-        }
-        .fa-facebook:hover {
-            background-color: #3B5998;
-            transition-duration: 0.5s;
-        }
-        .fa-youtube:hover{
-            background-color: #bb0000;
-            transition-duration: 0.5s;
-        }
-        .fa-reddit:hover{
-            background-color: #ff5700;
-            transition-duration: 0.5s;
-        }
         .centre{
             text-align: center;
             margin: 0;
@@ -186,9 +44,6 @@
             font-family: 'Lobster', cursive;
             font-size: 400%;
             color: #a43552;
-        }
-        .fa-solid{
-            font-size: 30px;
         }
         .ffffont{
             font-family: 'Mulish', sans-serif;
@@ -421,22 +276,6 @@
         @media all and (max-width: 600px) {
             .flex4 div { flex: 1;}
         }
-        .under{
-            border-top: 1px solid black;
-            padding: 1%;
-            text-align: center;
-            background: #747C82;
-            color: white;
-        }
-        ul.sort{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        .li1{
-            display: inline-block;
-            margin: 0 3%;
-        }
     </style>
 </head>
 <body class = "animate-in beforeunload">
@@ -444,11 +283,11 @@
         <nav class = "nav1">
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
             <ul>
-                <li><a href="https://twitter.com/coldplay?lang=en">Home</a></li>
-                <li><a href="https://www.facebook.com/coldplay/">About</a></li>
-                <li><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw">Member Info</a></li>
-                <li><a href="https://www.reddit.com/r/Coldplay/">Music</a></li>
-                <li><a href="#">Merch</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="memberinfo.html">Member Info</a></li>
+                <li><a href="Music.html">Music</a></li>
+                <li><a href="https://eustore.coldplay.com/">Merch</a></li>
             </ul>
             <img src = "images/icon.jpg" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
@@ -456,7 +295,7 @@
 
                     <hr>
 
-                    <a href = "newindex.html" class = "sub-menu-link">
+                    <a href = "index.html" class = "sub-menu-link">
                         
                         <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
                         <span>></span>
@@ -469,8 +308,12 @@
                         <p>&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Members</p>
                         <span>></span>
                     </a>
-                    <a href = "#" class = "sub-menu-link">                   
+                    <a href = "Music.html" class = "sub-menu-link">                   
                         <p><i class="fa-solid fa-music"></i>&nbsp;&nbsp;&nbsp;&nbsp;Music</p>
+                        <span>></span>
+                    </a>
+                    <a href = "https://eustore.coldplay.com/" class = "sub-menu-link">                   
+                        <p><i class="fa-solid fa-shirt"></i>&nbsp;&nbsp;Merch</p>
                         <span>></span>
                     </a>
 

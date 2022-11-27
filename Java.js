@@ -47,25 +47,25 @@ let track_list = [
   {
     name: "Something just like this",
     artist: "The Chainsmokers & Coldplay",
-    image: "Image URL",
+    image: "images/somethingjustlikethis.jpg",
     path: "Enthusiast.mp3"
   },
   {
     name: "Paradise",
     artist: "Coldplay",
-    image: "Image URL",
+    image: "images/paradise.jpeg",
     path: "Shipping_Lanes.mp3",
   },
   {
     name: "A Sky Full Of Stars",
     artist: "Coldplay",
-    image: "Image URL",
+    image: "images/askyfullofstars.jpg",
     path: "Shipping_Lanes.mp3",
   },
   {
     name: "Hymn For The Weekend",
     artist: "Coldplay",
-    image: "Image URL",
+    image: "images/hymnfortheweekend.jpg",
     path: "Shipping_Lanes.mp3",
   },
 ];
