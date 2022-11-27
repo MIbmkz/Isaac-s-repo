@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>ColdPlay Website</title>
+    <title>Music Player</title>
     <style>
         /* button starts here */
         *{
@@ -19,11 +19,17 @@
             font-family: 'Poppins' , sans-serif;
             box-sizing: border-box;
         }
+        .bg5{
+            background-color: #202c36;
+        }
         .size{
             width: 100%;
             min-height: 100vh;
             background-color: #202c36;
             color: #525252;
+        }
+        .user-pic:hover{
+            opacity: 0.5;
         }
         .nav1{
             background: #747C82;
@@ -57,7 +63,7 @@
             text-decoration: none;
         }
         .nav1 ul li a:hover{
-            color: red;
+            color:red;
             transition-duration: 0.5s;
         }
         .sub-menu-wrap{
@@ -173,85 +179,179 @@
             background-color: #ff5700;
             transition-duration: 0.5s;
         }
+        .centre{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: 'Lobster', cursive;
+            font-size: 400%;
+            color: #a43552;
+        }
         .fa-solid{
             font-size: 30px;
         }
-        .flex {
-            margin: 0;
+        .player {
+            width: 40%;
+            height: 105vh;
             display: flex;
-            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
         }
-
-        .flex div:first-child {
-            flex: 1;
+            
+        .details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 25px;
+        }
+            
+        .track-art {
+            margin: 25px;
+            height: 250px;
+            width: 250px;
+            background-image: URL(
+                "https://source.unsplash.com/Qrspubmx6kE/640x360");
             background-size: cover;
             background-position: center;
+            border-radius: 15%;
         }
-
-        .flex div:last-child {
-            margin: 2rem;
-            flex: 2;
+            
+            /* Changing the font sizes to suitable ones */
+        .now-playing {
+            font-size: 20px;
         }
-
-        .flex h3 {
-            font-size: 1.5rem;
-            margin-top: 0;
-            font-weight: 400;
+            
+        .track-name {
+            font-size: 20px;
         }
-        .flex p {
-            font-size: 1rem;
-            line-height: 1.4;
-            font-weight: 400;
-            color:white;
+            
+        .track-artist {
+            font-size: 20px;
         }
-        .flex p:last-of-type {
-            margin-bottom: 0;
+            
+            /* Using flex with the row direction to
+            align items in a horizontal direction */
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
-        .flex:first-of-type div:first-child {
-            background-image: url("images/descriptionpageimage.jpg");
-            z-index: 2;
-            border: 3px dotted #a43552;
-            margin-left: 5%;
+            
+        .playpause-track,
+        .prev-track,
+        .next-track {
+            padding: 25px;
+            opacity: 0.8;
+            
+            /* Smoothly transition the opacity */
+            transition: opacity .2s;
         }
-        .column{
-            margin-top: 7%;
+            
+            /* Change the opacity when mouse is hovered */
+        .playpause-track:hover,
+        .prev-track:hover,
+        .next-track:hover {
+            opacity: 1.0;
         }
-        .readm{
-            text-decoration: none;
-            color: #feecf9;
-            padding: 0.5%;
-            background-color: #fb3a64;
-            border: 1px solid #fb3a64; 
+            
+            /* Define the slider width so that it scales properly */
+        .slider_container {
+            width: 75%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .readm:hover{
-            background-color: #feecf9;
-            color: #fb3a64;
-            transition-duration: 0.4s;
+            
+            /* Modify the appearance of the slider */
+        .seek_slider, .volume_slider {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 5px;
+            background: black;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
         }
-        .box{
-            z-index: 1;
-            border: 9px solid #a43552;
-            width: 31%;
-            height: 55%;            
-            position: absolute;
-            top: 29%;
-            left: 3%;
+            
+            /* Modify the appearance of the slider thumb */
+        .seek_slider::-webkit-slider-thumb,
+        .volume_slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: white;
+            cursor: pointer;
+            border-radius: 50%;
         }
-        .user-pic:hover{
-            opacity: 0.5;
+            
+            /* Change the opacity when mouse is hovered */
+        .seek_slider:hover,
+        .volume_slider:hover {
+            opacity: 1.0;
         }
-        @media all and (max-width: 400px) {
-            .flex { flex-direction: column; } 
-            .flex div:first-child { min-height: 200px; }
+            
+        .seek_slider {
+            width: 60%;
         }
-
-        @media all and (max-width: 600px) {
-            .flex div { flex: 1; }
+            
+        .volume_slider {
+            width: 30%;
         }
-        .container {
-            position: relative;
-            text-align: center;
+            
+        .current-time,
+        .total-duration {
+            padding: 10px;
+        }
+            
+        i.fa-volume-down,
+        i.fa-volume-up {
+            padding: 10px;
+        }
+            
+            /* Change the mouse cursor to a pointer
+            when hovered over */
+        i.fa-play-circle,
+        i.fa-pause-circle,
+        i.fa-step-forward,
+        i.fa-step-backward {
+            cursor: pointer;
+        }
+        /* Start normal styling for music here */
+        .headd{
             color: white;
+            text-align: center;
+
+        }
+        .songs{
+            width: 100%;
+        }
+        .flexing{
+            display: flex;
+            flex-direction: row;
+        }
+        .songs > ol{
+            margin-left: 30%;
+            color: white;
+            text-align: left;
+            font-size: 40px;
+        }
+        .img1{
+            width: 48%;
+            height: 40%;
+        }
+        .img2{
+            width: 51%;
+            height: 45%;
+        }
+        .widthss{
+            width: 80%;
         }
         .under{
             border-top: 1px solid black;
@@ -271,7 +371,7 @@
         }
     </style>
 </head>
-<body class = "animate-in beforeunload">
+<body class = "bg5 animate-in beforeunload">
     <div class="size">
         <nav class = "nav1">
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
@@ -288,7 +388,7 @@
 
                     <hr>
 
-                    <a href = "newindex.html" class = "sub-menu-link">
+                    <a href = "#" class = "sub-menu-link">
                         
                         <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
                         <span>></span>
@@ -309,17 +409,71 @@
                 </div>
             </div>
         </nav>
-        <div class="column">
-            <div class = "box"></div>
-            <figure class="flex">
-                <div></div>
-                <div>
-                    <h1 style = "color:white;"><u style = "font-family:'Lobster', cursive;">About Coldplay</u></h1>
-                    <p style = "font-family: 'Poppins', sans-serif;">Coldplay was formed in 1998 at University College, London, with the pairing of pianist-vocalist Chris Martin (b. March 2, 1977, Exeter, England) and guitarist Jonny Buckland (b. September 11, 1977, London). The band was later filled out with fellow students Guy Berryman (b. April 12, 1978, Kirkcaldy, Scotland) on bass and Will Champion (b. July 31, 1978, Southampton, England), a guitarist who later switched to drums. Coldplay penetrated the U.K. Top 100 in 1999 with the single “Brothers & Sisters” on the independent Fierce Panda label before signing with major label Parlaphone.</p><br>
-                    <a style = "font-family: 'Karla', sans-serif;" class = "readm" href = "Newabout2.html">Read more</a>
+        <div class = "flexing">
+            <div class = "widthss">
+                <nav class = "songs">
+                    <h1 class = "headd">Featured music</h1>
+                    <br>
+                    <ol>
+                        <li>Viva La Vida</li>
+                        <li>Something just like this</li>
+                        <li>Paradise</li>
+                        <li>A Sky Full Of Stars</li>
+                        <li>Hymn For The Weekend</li>
+                    </ol>
+                    <br>
+                    <div class="flexing">
+                        <img class = "img1" src = "images/All4tgtpic2.jpg">
+                        <img class = "img2" src = "images/All4tgtpic3.jpg">
+                    </div>
+                </nav>
+
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-            </figure>   
-        </div> 
+            </div>
+            <div class="player" style = "color: white;">
+    
+                <!-- Define the section for displaying details -->
+                <div class="details">
+                    <div class="now-playing">PLAYING x OF y</div>
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+            
+                <!-- Define the section for displaying track buttons -->
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                </div>
+            
+                <!-- Define the section for displaying the seek slider-->
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+            
+                <!-- Define the section for displaying the volume slider-->
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
         <div class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
@@ -329,5 +483,6 @@
             </ul>
             <p style = "font-size: 10px;">Author: Isaac</p>
         </div>
+
     </div>
 </html>

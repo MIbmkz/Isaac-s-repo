@@ -21,11 +21,10 @@
         }
         .size{
             width: 100%;
-            min-height: 100vh;
             background-image: url("images/Performingbg.jpg");
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            height: 100%;
             color: #525252;
         }
         .user-pic:hover{
@@ -62,7 +61,12 @@
             color: #fff;
             text-decoration: none;
         }
+        .nav1 ul li a:hover{
+            color:red;
+            transition-duration: 0.5s;
+        }
         .sub-menu-wrap{
+            z-index: 4;
             position: absolute;
             top: 100%;
             right: 10%;
@@ -72,6 +76,7 @@
             transition: max-height 0.5s;
         }
         .sub-menu-wrap.open-menu{
+            z-index: 4;
             max-height: 400px;
         }
         .sub-menu{
@@ -185,6 +190,22 @@
         .fa-solid{
             font-size: 30px;
         }
+        .under{
+            border-top: 1px solid black;
+            padding: 1%;
+            text-align: center;
+            background: #747C82;
+            color: white;
+        }
+        ul.sort{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .li1{
+            display: inline-block;
+            margin: 0 3%;
+        }
     </style>
 </head>
 <body class = "animate-in beforeunload">
@@ -192,10 +213,11 @@
         <nav class = "nav1">
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
             <ul>
-                <li><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
-                <li><a href="https://www.facebook.com/coldplay/" class="z fa fa-facebook"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" class="z fa fa-youtube"></a></li>
-                <li><a href="https://www.reddit.com/r/Coldplay/" class="z fa fa-reddit"></a></li></li>
+                <li><a href="https://twitter.com/coldplay?lang=en">Home</a></li>
+                <li><a href="https://www.facebook.com/coldplay/">About</a></li>
+                <li><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw">Member Info</a></li>
+                <li><a href="https://www.reddit.com/r/Coldplay/">Music</a></li>
+                <li><a href="#">Merch</a></li>
             </ul>
             <img src = "images/icon.jpg" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
@@ -208,11 +230,11 @@
                         <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
                         <span>></span>
                     </a>
-                    <a href = "#" class = "sub-menu-link">
+                    <a href = "newabout.html" class = "sub-menu-link">
                         <p><i class="fa-solid fa-people-group"></i>&nbsp;&nbsp;&nbsp;About Coldplay</p>
                         <span>></span>
                     </a>
-                    <a href = "#" class = "sub-menu-link">
+                    <a href = "Newmemberinfo.html" class = "sub-menu-link">
                         <p>&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Members</p>
                         <span>></span>
                     </a>
@@ -227,6 +249,20 @@
         <div class = "centre">
             <h1 style = "font-family:'Lobster', cursive;">COLDPLAY</h1>
             <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A 4-man Band</h5>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="under">
+            <ul class = "sort">
+                <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
+                <li class = "li1"><a href="https://www.facebook.com/coldplay/" class="z fa fa-facebook"></a></li>
+                <li class = "li1"><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" class="z fa fa-youtube"></a></li>
+                <li class = "li1"><a href="https://www.reddit.com/r/Coldplay/" class="z fa fa-reddit"></a></li></li>
+            </ul>
+            <p style = "font-size: 10px;">Author: Isaac</p>
         </div>
     </div>
 </html>
