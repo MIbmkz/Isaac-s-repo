@@ -8,3 +8,4 @@ https://www.britannica.com/topic/Coldplay
 https://en.wikipedia.org/wiki/Chris_Martin
 https://en.wikipedia.org/wiki/Guy_Berryman
 https://en.wikipedia.org/wiki/Jonny_Buckland
+https://en.wikipedia.org/wiki/Will_Champion
