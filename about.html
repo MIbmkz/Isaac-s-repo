@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class = "A">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
     <title>ColdPlay Website</title>
     <style>
         /* button starts here */
@@ -22,92 +25,48 @@
         .size{
             width: 100%;
             min-height: 100vh;
-            background-color: #202c36;
+            background-image: url("images/Stars\ background.gif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             color: #525252;
         }
-        .flex {
-            margin: 0;
-            display: flex;
-            margin-bottom: 2rem;
+        .center {
+            text-align: center;
+            margin: auto;
+            width: 50%;
+            padding: 15%;
         }
-
-        .flex div:first-child {
-            flex: 1;
-            background-size: cover;
-            background-position: center;
+        .boxes{
+            padding-top: 1%;
+            padding-bottom: 1%;
+            width: 100%;
+            background-color:#202c36 ;
         }
-
-        .flex div:last-child {
-            margin: 2rem;
-            flex: 2;
-        }
-
-        .flex h3 {
-            font-size: 1.5rem;
-            margin-top: 0;
-            font-weight: 400;
-        }
-        .flex p {
-            font-size: 1rem;
-            line-height: 1.4;
-            font-weight: 400;
-            color:white;
-        }
-        .flex p:last-of-type {
-            margin-bottom: 0;
-        }
-        .flex:first-of-type div:first-child {
-            background-image: url("images/descriptionpageimage.jpg");
-            z-index: 2;
-            border: 3px dotted #a43552;
+        .boxes p{
             margin-left: 5%;
+            width: 90%;
+            text-align: center;
+            color: #B8B8B8;
         }
-        .column{
-            margin-top: 7%;
-        }
-        .readm{
+        .readm1{
             text-decoration: none;
             color: #feecf9;
             padding: 0.5%;
             background-color: #fb3a64;
-            border: 1px solid #fb3a64; 
+            border: 1px solid #fb3a64;
         }
-        .readm:hover{
+        .readm1:hover{
             background-color: #feecf9;
             color: #fb3a64;
             transition-duration: 0.4s;
-        }
-        .box{
-            z-index: 1;
-            border: 9px solid #a43552;
-            width: 31%;
-            height: 55%;            
-            position: absolute;
-            top: 29%;
-            left: 3%;
-        }
-        .user-pic:hover{
-            opacity: 0.5;
-        }
-        @media all and (max-width: 400px) {
-            .flex { flex-direction: column; } 
-            .flex div:first-child { min-height: 200px; }
-        }
-
-        @media all and (max-width: 600px) {
-            .flex div { flex: 1; }
-        }
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
         }
     </style>
 </head>
 <body class = "animate-in beforeunload">
     <div class="size">
         <nav class = "nav1">
-            <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
+            <h1 style = "font-family:'Lobster', cursive;color:white;">ColdPlay</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -120,8 +79,7 @@
                 <div class="sub-menu">
 
                     <hr>
-
-                    <a href = "index.html" class = "sub-menu-link">   
+                    <a href = "index.html" class = "sub-menu-link">    
                         <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
                         <span>></span>
                     </a>
@@ -144,18 +102,36 @@
 
                 </div>
             </div>
-        </nav>
-        <div class="column">
-            <div class = "box"></div>
-            <figure class="flex">
-                <div></div>
-                <div>
-                    <h1 style = "color:white;"><u style = "font-family:'Lobster', cursive;">About Coldplay</u></h1>
-                    <p style = "font-family: 'Poppins', sans-serif;">Coldplay was formed in 1998 at University College, London, with the pairing of pianist-vocalist Chris Martin (b. March 2, 1977, Exeter, England) and guitarist Jonny Buckland (b. September 11, 1977, London). The band was later filled out with fellow students Guy Berryman (b. April 12, 1978, Kirkcaldy, Scotland) on bass and Will Champion (b. July 31, 1978, Southampton, England), a guitarist who later switched to drums. Coldplay penetrated the U.K. Top 100 in 1999 with the single “Brothers & Sisters” on the independent Fierce Panda label before signing with major label Parlaphone.</p><br>
-                    <a style = "font-family: 'Karla', sans-serif;" class = "readm" href = "about2.html">Read more</a>
-                </div>
-            </figure>   
-        </div> 
+        </nav>    
+        <div class="center">
+            <h1 style="color: #DEDDBF; font-size: 40px;">About Coldplay</h1>
+        </div>             
+        <div class = "boxes">
+            <p style = "font-family: 'M PLUS Rounded 1c', sans-serif;; font-size: 20px;">Coldplay’s full-length debut Parachutes (2000) sold millions on the strength of
+                Martin’s vocals and such singles as the bittersweet “Yellow.” Parachutes earned 
+                the band its first Grammy Award, for best alternative album, and paved the way
+                for the more ambitious A Rush of Blood to the Head (2002). The latter album 
+                earned the group two more Grammy Awards, and singles such as “Clocks” helped
+                drive the band’s total album sales over the 20 million mark. Coldplay 
+                followed the concert album Live 2003 (2003) with X & Y (2005), a collection
+                of guitar-driven, arena-friendly rock anthems (including the hit single “Speed of Sound”) 
+                that elevated the group to the rank of such “big bands” as U2 and Radiohead. Meanwhile,
+                Martin’s 2003–16 marriage to American actress Gwyneth Paltrow earned him celebrity 
+                status independent of his musical achievements. The band’s 2008 release, Viva la Vida, 
+                produced in part by Brian Eno, topped the charts in the United States and the United 
+                Kingdom, and the album’s title track, arguably Coldplay’s most radio-friendly effort
+                yet, was the number one single on both sides of the Atlantic. That popularity was 
+                reflected at the 2009 Grammy Awards ceremony, where the band collected honours for 
+                song of the year, best rock album, and best pop performance by a group. Working 
+                again with Eno, Coldplay returned with the sleek Mylo Xyloto (2011), which notably 
+                featured a duet between Martin and pop singer Rihanna. Later releases included the 
+                subdued Ghost Stories (2014), which yielded the hit singles “Magic” and “A Sky 
+                Full of Stars”; the upbeat A Head Full of Dreams (2015); and the EP Kaleidoscope (2017). 
+                To mark the release of Everyday Life (2019), Coldplay performed two live-streamed concerts, 
+                one at sunrise and the other at sunset, in Amman, Jordan. It was the band’s eighth album 
+                to reach the top spot on the British album chart.<br><br>
+            </p>
+        </div>
         <div class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
