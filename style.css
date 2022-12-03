@@ -196,3 +196,6 @@ ul.sort{
     display: inline-block;
     margin: 0 8%;
 }
+html{
+    scroll-behavior: smooth;
+}
