@@ -37,7 +37,7 @@
             margin: 0;
             width: 100%;
             padding: 5%;
-            font-size: 400%;
+            font-size: 5vw;
             color: white;
         }
         .tour{
@@ -152,6 +152,35 @@
             border-top: 2px solid #ab8efc;
             border-bottom: 2px solid #ab8efc;
          }
+         .centre{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 10%;
+            font-size: 250%;
+            color: white;
+        }
+        @media screen and (max-width: 414px) { 
+            .fleeex{
+            display: flex;
+            flex-direction: column;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+                width: 96%;
+                margin: 0 2% 0 2%;
+            }
+            .nav1 > ul{
+                display: none;
+            }         
+        }
+        @media screen and (max-width: 986px){
+            .nav1 > ul{
+                display: none;
+            }  
+        }
     </style>
 </head>
 <body class = "animate-in beforeunload">
@@ -193,11 +222,15 @@
                         <p><i class="fa-solid fa-shirt"></i>&nbsp;&nbsp;Merch</p>
                         <span>></span>
                     </a>
+                    <a href = "https://www.coldplay.com/tour/" class = "sub-menu-link">                   
+                        <p><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;Tickets</p>
+                        <span>></span>
+                    </a>
                 </div>
             </div>
         </nav>
-        <div class = "centre">
-            <h1 style = "font-family: 'Lobster', cursive;">COLDPLAY</h1>
+        <div class="centre">
+            <h1 style = "font-family:'Lobster', cursive;">ColdPlay</h1>
         </div>
         <div class="column">
             <figure class="flex">
