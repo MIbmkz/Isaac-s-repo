@@ -7,6 +7,7 @@
     <link rel = "Stylesheet" href = "normalize.css" type = "text/css">
     <link rel = "Stylesheet" href = "style.css" type = "text/css">
     <script src="Java.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,21 +22,106 @@
         }
         .size{
             width: 100%;
-            background-image: url("images/Performingbg.jpg");
+            min-height: 100vh;
+            background-image: url("images/all4tgtpic2.jpg");
             background-position: center;
             background-repeat: no-repeat;
-            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
             color: #525252;
         }
         .centre{
             text-align: center;
             margin: 0;
             width: 100%;
-            padding: 0;
-            font-family: 'Lobster', cursive;
+            padding: 5%;
             font-size: 400%;
-            color: #a43552;
+            color: white;
         }
+        .tour{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 5%;
+            font-size: 150%;
+            color: white;
+        }
+        .flex {
+            margin: 0;
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        .flex div:first-child {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex div:last-child {
+            margin: 1rem;
+            flex: 2;
+        }
+
+        .flex h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        .flex p {
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+            color:white;
+        }
+        .flex p:last-of-type {
+            margin-bottom: 0;
+        }
+        .flex:first-of-type div:first-child {
+            background-image: url("images/descriptionpageimage.jpg");
+            z-index: 2;
+            border: 3px dotted #a43552;
+            margin-left: 5%;
+        }
+        .column{
+            padding: 5% 0;
+            background-color: #747C82;
+        }
+        .readm{
+            text-decoration: none;
+            color: #feecf9;
+            padding: 0.5%;
+            background-color: #fb3a64;
+            border: 1px solid #fb3a64; 
+        }
+        .readm:hover{
+            background-color: #feecf9;
+            color: #fb3a64;
+            transition-duration: 0.4s;
+        }
+        .box{
+            z-index: 1;
+            border: 9px solid #a43552;
+            width: 31%;
+            height: 55%;            
+            position: absolute;
+            top: 29%;
+            left: 3%;
+        }
+        @media all and (max-width: 400px) {
+            .flex { flex-direction: column; } 
+            .flex div:first-child { min-height: 200px; }
+        }
+
+        @media all and (max-width: 600px) {
+            .flex div { flex: 1; }
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        
     </style>
 </head>
 <body class = "animate-in beforeunload">
@@ -81,14 +167,25 @@
             </div>
         </nav>
         <div class = "centre">
-            <h1 style = "font-family:'Lobster', cursive;">COLDPLAY</h1>
-            <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A 4-man Band</h5>
+            <h1 style = "font-family: 'Lobster', cursive;">COLDPLAY</h1>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="column">
+            <figure class="flex">
+                <div></div>
+                <div>
+                    <h1 style = "color:white;"><u style = "font-family:'Lobster', cursive;">About Coldplay</u></h1>
+                    <p style = "font-family: 'Poppins', sans-serif;">Coldplay was formed in 1998 at University College, London, with the pairing of pianist-vocalist Chris Martin (b. March 2, 1977, Exeter, England) and guitarist Jonny Buckland (b. September 11, 1977, London). The band was later filled out with fellow students Guy Berryman (b. April 12, 1978, Kirkcaldy, Scotland) on bass and Will Champion (b. July 31, 1978, Southampton, England), a guitarist who later switched to drums. Coldplay penetrated the U.K. Top 100 in 1999 with the single “Brothers & Sisters” on the independent Fierce Panda label before signing with major label Parlaphone.</p><br>
+                    <a style = "font-family: 'Karla', sans-serif;" class = "readm" href = "about2.html">Read more</a>
+                </div>
+            </figure>   
+        </div> 
+        <div class="tour">
+            <h1>ColdPlay is Traversing around the world to meet all their fans</h1>
+            <a style = "font-family: 'Karla', sans-serif; font-size: 75%;" class = "readm" href = "about2.html">Get tickets Here</a>
+        </div>
+        <div class="album">
+            
+        </div>
         <div class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter"></a></li>
