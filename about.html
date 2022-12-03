@@ -25,42 +25,38 @@
         .size{
             width: 100%;
             min-height: 100vh;
-            background-image: url("images/Stars\ background.gif");
+            background-image: url("images/Performing.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            color: #525252;
+            background-attachment: fixed;
+            color: white;
         }
         .center {
             text-align: center;
             margin: auto;
-            width: 50%;
+            width: 100%;
             padding: 15%;
         }
         .boxes{
-            padding-top: 1%;
-            padding-bottom: 1%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            height: auto;
             width: 100%;
-            background-color:#202c36 ;
+            background-color:#202c36;
         }
         .boxes p{
             margin-left: 5%;
             width: 90%;
             text-align: center;
             color: #B8B8B8;
+        } 
+        @media screen and (max-width: 986px){
+            .nav1 > ul{
+                display: none;
+            }  
         }
-        .readm1{
-            text-decoration: none;
-            color: #feecf9;
-            padding: 0.5%;
-            background-color: #fb3a64;
-            border: 1px solid #fb3a64;
-        }
-        .readm1:hover{
-            background-color: #feecf9;
-            color: #fb3a64;
-            transition-duration: 0.4s;
-        }
+
     </style>
 </head>
 <body class = "animate-in beforeunload">
@@ -73,6 +69,7 @@
                 <li><a href="memberinfo.html">Member Info</a></li>
                 <li><a href="Music.html">Music</a></li>
                 <li><a href="https://eustore.coldplay.com/">Merch</a></li>
+                <li><a href="https://www.coldplay.com/tour/">Tour Tickets</a></li>
             </ul>
             <img src = "images/icon.jpg" alt = "Dropdown icon" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
@@ -99,6 +96,10 @@
                         <p><i class="fa-solid fa-shirt"></i>&nbsp;&nbsp;Merch</p>
                         <span>></span>
                     </a>
+                    <a href = "https://www.coldplay.com/tour/" class = "sub-menu-link">                   
+                        <p><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;Tickets</p>
+                        <span>></span>
+                    </a>
 
                 </div>
             </div>
@@ -107,7 +108,8 @@
             <h2 style="color: #DEDDBF; font-size: 40px;">About Coldplay</h2>
         </div>             
         <div class = "boxes">
-            <p style = "font-family: 'M PLUS Rounded 1c', sans-serif;; font-size: 20px;">Coldplay’s full-length debut Parachutes (2000) sold millions on the strength of
+            <p style = "font-family: 'M PLUS Rounded 1c', sans-serif;; font-size: 20px;">
+                Coldplay’s full-length debut Parachutes (2000) sold millions on the strength of
                 Martin’s vocals and such singles as the bittersweet “Yellow.” Parachutes earned 
                 the band its first Grammy Award, for best alternative album, and paved the way
                 for the more ambitious A Rush of Blood to the Head (2002). The latter album 
@@ -117,7 +119,15 @@
                 of guitar-driven, arena-friendly rock anthems (including the hit single “Speed of Sound”) 
                 that elevated the group to the rank of such “big bands” as U2 and Radiohead. Meanwhile,
                 Martin’s 2003–16 marriage to American actress Gwyneth Paltrow earned him celebrity 
-                status independent of his musical achievements. The band’s 2008 release, Viva la Vida, 
+                status independent of his musical achievements.<br><br>
+            </p>
+        </div>
+        <div class="center">
+            <h2 style="color: #DEDDBF; font-size: 40px;">Founded in 1998</h2>
+        </div>  
+        <div class = "boxes">
+            <p style = "font-family: 'M PLUS Rounded 1c', sans-serif;; font-size: 20px;">
+                The band’s 2008 release, Viva la Vida, 
                 produced in part by Brian Eno, topped the charts in the United States and the United 
                 Kingdom, and the album’s title track, arguably Coldplay’s most radio-friendly effort
                 yet, was the number one single on both sides of the Atlantic. That popularity was 
@@ -129,7 +139,7 @@
                 Full of Stars”; the upbeat A Head Full of Dreams (2015); and the EP Kaleidoscope (2017). 
                 To mark the release of Everyday Life (2019), Coldplay performed two live-streamed concerts, 
                 one at sunrise and the other at sunset, in Amman, Jordan. It was the band’s eighth album 
-                to reach the top spot on the British album chart.<br><br>
+                to reach the top spot on the British album chart.
             </p>
         </div>
         <div class="under">

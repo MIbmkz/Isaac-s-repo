@@ -7,6 +7,7 @@
     <link rel = "Stylesheet" href = "normalize.css" type = "text/css">
     <link rel = "Stylesheet" href = "style.css" type = "text/css">
     <script src="Java.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
@@ -109,7 +110,7 @@
             top: 29%;
             left: 3%;
         }
-        @media all and (max-width: 400px) {
+        @media all and (max-width: 414px) {
             .flex { flex-direction: column; } 
             .flex div:first-child { min-height: 200px; }
         }
@@ -147,6 +148,10 @@
          img{
             border-radius: 3%;
          }
+         .toppers{
+            border-top: 2px solid #ab8efc;
+            border-bottom: 2px solid #ab8efc;
+         }
     </style>
 </head>
 <body class = "animate-in beforeunload">
@@ -159,6 +164,7 @@
                 <li><a href="memberinfo.html">Member Info</a></li>
                 <li><a href="Music.html">Music</a></li>
                 <li><a href="https://eustore.coldplay.com/">Merch</a></li>
+                <li><a href="https://www.coldplay.com/tour/">Tour Tickets</a></li>
             </ul>
             <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
@@ -204,6 +210,7 @@
             </figure>   
         </div> 
         <div class="tour">
+            <h1 class = "toppers" style = "font-family: 'Times New Roman', Times, serif; font-size: 220%;">Music <span style="font-family: 'Dancing Script', cursive;">of the</span> Spheres</h1>
             <h1>ColdPlay is Traversing around the world to meet all their fans</h1>
             <a style = "font-family: 'Karla', sans-serif; font-size: 75%;" class = "readm" href = "https://www.coldplay.com/tour/">Get tickets Here</a>
         </div>
