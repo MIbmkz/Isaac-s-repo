@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/8216e8d135.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Music Player</title>
     <style>
         /* button starts here */
@@ -39,7 +40,6 @@
         }
         .player {
             width: 40%;
-            height: 105vh;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -58,7 +58,7 @@
             margin: 25px;
             height: 250px;
             width: 250px;
-            background-image: URL("https://source.unsplash.com/Qrspubmx6kE/640x360");
+            background-image: none;
             background-size: cover;
             background-position: center;
             border-radius: 15%;
@@ -181,6 +181,10 @@
             display: flex;
             flex-direction: row;
         }
+        .flexing1{
+            display: flex;
+            flex-direction: row;
+        }
         .songs > ol{
             margin-left: 30%;
             color: white;
@@ -202,8 +206,57 @@
             width: 49%;
             height: 45%;
         }
-        .widthss{
-            width: 80%;
+        @media screen and (max-width: 560px) {
+            .songs > ol{
+                margin-left: 22%;
+                color: white;
+                text-align: left;
+                font-size: 20px;
+            }
+            .songs > ol > li{
+                padding: 3%;
+                background-color: #04354c;
+                width: 70%;
+                margin: 1% 5% 1% 5%
+            }
+            .img1{
+                width: 92%;
+                margin: 0 4% 0 4%;
+            }
+            .img2{
+                width: 92%;
+                margin: 0 4% 0 4%;
+            }
+            .flexing{
+                display: flex;
+                flex-direction: column;
+            }
+            .flexing1{
+                display:flex;
+                flex-direction: column;
+            }
+            .player {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 717px){
+            .flexing1{
+                display:flex;
+                flex-direction: column;
+            }
+            .img1{
+                width: 90%;
+                margin: 0 5% 0 5%;
+            }
+            .img2{
+                width: 90%;
+                margin: 0 5% 0 5%;
+            }
+        }
+        @media screen and (max-width: 987px){
+            .nav1 > ul{
+                display: none;
+            }  
         }
     </style>
 </head>
@@ -255,26 +308,24 @@
             </div>
         </nav>
         <div class = "flexing">
-            <div class = "widthss">
-                <nav class = "songs">
-                    <h1 class = "headd">Top 5 Coldplay musics</h1>
-                    <br>
-                    <ol>
-                        <li>"Viva La Vida"</li>
-                        <li>"Something just like this"</li>
-                        <li>"Paradise"</li>
-                        <li>"A Sky Full Of Stars"</li>
-                        <li>"Hymn For The Weekend"</li>
-                    </ol>
-                    <br>
-                    <div class="flexing">
-                        <img class = "img1" src = "images/Performing.jpg" alt = "Coldplay Performance">
-                        <img class = "img2" src = "images/All4tgtpic3.jpg" alt = "Coldplay members together">
-                    </div>
-                </nav>
-
+            <nav class = "songs">
+                <h1 class = "headd">Top 5 Coldplay musics</h1>
                 <br>
-            </div>
+                <ol>
+                    <li>"Viva La Vida"</li>
+                    <li>"Something just like this"</li>
+                    <li>"Paradise"</li>
+                    <li>"A Sky Full Of Stars"</li>
+                    <li>"Hymn For The Weekend"</li>
+                </ol>
+                <br>
+                <div class="flexing1">
+                    <img class = "img1" src = "images/Performing.jpg" alt = "Coldplay Performance">
+                    <img class = "img2" src = "images/All4tgtpic3.jpg" alt = "Coldplay members together">
+                </div>
+            </nav>
+
+            <br>
             <div class="player" style = "color: white;">
     
                 <!-- Define the section for displaying details -->

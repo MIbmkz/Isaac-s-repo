@@ -66,7 +66,7 @@ let track_list = [
     name: "Hymn For The Weekend",
     artist: "Coldplay",
     image: "images/hymnfortheweekend.jpg",
-    path: "music/towerofflower.m4a",
+    path: "music/hymnfortheweekend.m4a",
   },
 ];
 
