@@ -13,21 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/images/Topicon.png">
     <title>Music Player</title>
     <style>
-        /* button starts here */
-        *{
-            margin:0;
-            padding:0;
-            font-family: 'Poppins' , sans-serif;
-            box-sizing: border-box;
-        }
-        .centre{
-            text-align: center;
-            margin: 0;
-            width: 100%;
-            padding: 20%;
-            font-size: 5vw;
-            color: white;
-        }
+        /* background sizing */
         .size{
             width: 100%;
             min-height: 100vh;
@@ -37,6 +23,15 @@
             background-size: cover;
             background-attachment: fixed;
             color: #525252;
+        }
+        /* Centralising the centre header text */
+        .centre{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 20%;
+            font-size: 5vw;
+            color: white;
         }
         .centre{
             text-align: center;
@@ -209,14 +204,6 @@
             margin-top: 1%;
             margin-bottom: 1%;
         }
-        .img1{
-            width: 54%;
-            height: 40%;
-        }
-        .img2{
-            width: 49%;
-            height: 45%;
-        }
         @media screen and (max-width: 560px) {
             .songs > ol{
                 margin-left: 22%;
@@ -273,7 +260,9 @@
 </head>
 <body class = "animate-in beforeunload">
     <div class="size">
-        <nav class = "nav1">
+        <!-- This is header start -->
+        <nav class = "nav1"> 
+            <!-- Header infos -->
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -283,8 +272,9 @@
                 <li><a href="https://eustore.coldplay.com/" target = "_blank">Merch</a></li>
                 <li><a href="https://www.coldplay.com/tour/" target = "_blank">Tour Tickets</a></li>
             </ul>
-            <img src = "images/icon.jpg" class = "user-pic" alt = "Dropdown icon" onclick="toggleMenu()">
+            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
+                <!-- Submenu dropdown listing + links -->
                 <div class="sub-menu">
 
                     <hr>
@@ -314,10 +304,10 @@
                         <p><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;Tickets</p>
                         <span>></span>
                     </a>
-
                 </div>
             </div>
         </nav>
+        <!-- End of header -->
         <div class="centre">
             <h2 style="color: white; font-size: 40px;">Coldplay Music</h2>
         </div> 
@@ -378,7 +368,7 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        <br>
         <footer class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter" target = "_blank"></a></li>
