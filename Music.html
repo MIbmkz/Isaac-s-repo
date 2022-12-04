@@ -211,6 +211,13 @@
             width: 60%;
             margin-top: 1%;
             margin-bottom: 1%;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+        .songs > ol > li:hover{
+            transform: translate(5px);
+            font-weight: 600;
+            background-color: #fb3a64;
         }
         @media screen and (max-width: 560px) {
             .songs > ol{
@@ -334,11 +341,11 @@
                 <br>
                 <ol>
                     <!-- List of top 5 music -->
-                    <li>"Viva La Vida"</li>
-                    <li>"Something just like this"</li>
-                    <li>"Paradise"</li>
-                    <li>"A Sky Full Of Stars"</li>
-                    <li>"Hymn For The Weekend"</li>
+                    <li onclick = "track1()">"Viva La Vida"</li>
+                    <li onclick = "track2()">"Something just like this"</li>
+                    <li onclick = "track3()">"Paradise"</li>
+                    <li onclick = "track4()">"A Sky Full Of Stars"</li>
+                    <li onclick = "track5()">"Hymn For The Weekend"</li>
                 </ol>
                 <br>
                 <div class="flexing1">

@@ -1,10 +1,14 @@
 //Animation transition
+// Before changing pages, remove the animate-in effect and add animate-out effect so 
+// that it animates out before going to the next page
 window.addEventListener("beforeunload", function () {
     document.body.classList.remove("animate-in");
     document.body.classList.add("animate-out");
 });
 
 // Dropdown
+// Toggle class open-menu so that when you click the icon, the height will increase from 0px to 400px
+// and be visible
 let subMenu = document.getElementById("subMenu");
 
 function toggleMenu(){
@@ -12,7 +16,8 @@ function toggleMenu(){
 }
 
 // Music player
-// Select all the elements in the HTML page
+
+// Select all the player elements from the HTML page
 // and assign them to a variable
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
@@ -28,15 +33,15 @@ let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
  
-// Specify globally used values
+// values that is going to be used mostly in this java
 let track_index = 0;
 let isPlaying = false;
 let updateTimer;
  
-// Create the audio element for the player
+// Creating of the audio element for the player
 let curr_track = document.createElement('audio');
  
-// Define the list of tracks that have to be played
+// Creating the list of tracks that have to be played and importing the music
 let track_list = [
   {
     name: "Viva La Vida",
@@ -71,15 +76,15 @@ let track_list = [
 ];
 
 function loadTrack(track_index) {
-    // Clear the previous seek timer
+    // Clearing the previous time of the previous song
     clearInterval(updateTimer);
     resetValues();
    
-    // Load a new track
+    // Loading a new music track to be played
     curr_track.src = track_list[track_index].path;
     curr_track.load();
    
-    // Update details of the track
+    // Updating details of the track playing to show the details
     track_art.style.backgroundImage =
        "url(" + track_list[track_index].image + ")";
     track_name.textContent = track_list[track_index].name;
@@ -87,17 +92,17 @@ function loadTrack(track_index) {
     now_playing.textContent =
        "PLAYING " + (track_index + 1) + " OF " + track_list.length;
    
-    // Set an interval of 1000 milliseconds
-    // for updating the seek slider
+    // Set an interval of 1 second for updating the seek slider
     updateTimer = setInterval(seekUpdate, 1000);
    
-    // Move to the next track if the current finishes playing
-    // using the 'ended' event
+    // Move to the next track if the current finishes playing using "ended" where the track finishes
+    // playing
     curr_track.addEventListener("ended", nextTrack);
   }
    
    
-  // Function to reset all values to their default
+  // Resetting of values of all the timing for
+  // when a new track is being played
   function resetValues() {
     curr_time.textContent = "00:00";
     total_duration.textContent = "00:00";
@@ -136,7 +141,7 @@ function loadTrack(track_index) {
       track_index += 1;
     else track_index = 0;
    
-    // Load and play the new track
+    // Load and play the newer track
     loadTrack(track_index);
     playTrack();
   }
@@ -148,7 +153,7 @@ function loadTrack(track_index) {
       track_index -= 1;
     else track_index = track_list.length - 1;
      
-    // Load and play the new track
+    // Load and play the newer track
     loadTrack(track_index);
     playTrack();
   }
@@ -173,6 +178,7 @@ function loadTrack(track_index) {
     let seekPosition = 0;
    
     // Check if the current track duration is a legible number
+    // !isNaN return turns if curr_track.duration is a number
     if (!isNaN(curr_track.duration)) {
       seekPosition = curr_track.currentTime * (100 / curr_track.duration);
       seek_slider.value = seekPosition;
@@ -196,3 +202,25 @@ function loadTrack(track_index) {
   }
 
   loadTrack(track_index);
+
+  // Making it so that the li is clickable for automatic play
+  function track1(){
+    loadTrack(0);
+    playTrack();
+  }
+  function track2(){
+    loadTrack(1);
+    playTrack();
+  }
+  function track3(){
+    loadTrack(2);
+    playTrack();
+  }
+  function track4(){
+    loadTrack(3);
+    playTrack();
+  }
+  function track5(){
+    loadTrack(4);
+    playTrack();
+  }

@@ -5,7 +5,7 @@ This is a website solely to promote Coldplay's members, merch and tickets. This 
 
 ## Design Process
 This website shows Coldplay's History, their members and their music. This website is mainly for people who are really interested in Coldplay and want to learn more about them. Furthermore, other than knowing about Coldplay, they can also buy their merch or tickets to their latest tour know as the *Music of the Spheres*.
-- As a User of this app, i will definitely want to learn more about the members in the band "ColdPlay". By the end of this website i would want to know about the histories of Coldplay, how it started and how they all got together as a band.
+- As a User of this website, i will definitely want to learn more about the members in the band "ColdPlay" and also know on their latest tour and their albums . By the end of this website i would want to know about the histories of Coldplay, how it started and how they all got together as a band.
 
 <--put wireframe link here-->
 ## Features
