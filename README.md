@@ -44,7 +44,7 @@ Using the w3 Validator, i have corrected all my errors and also made sure that m
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2793839.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2Fcoldplay-hd-wallpaper&tbnid=qhbPdvpvKSO3LM&vet=12ahUKEwjnkPySxN37AhWai9gFHSFGA2YQMygDegUIARDEAQ..i&docid=ayESNkenKKoXGM&w=2560&h=1440&q=coldplay%20performing%20wallpaper%204k&ved=2ahUKEwjnkPySxN37AhWai9gFHSFGA2YQMygDegUIARDEAQ
 
 ### memberinfo.html pictures
-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fcoldplay-hd-wallpaper&psig=AOvVaw2XkLInB7IAkWeVn8Q7as80&ust=1670211305030000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjl8IyE3_sCFQAAAAAdAAAAABAE
+- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fcoldplay&psig=AOvVaw2XkLInB7IAkWeVn8Q7as80&ust=1670211305030000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjl8IyE3_sCFQAAAAAdAAAAABAd
   
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1988511.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2Fchris-martin-wallpapers&tbnid=qwx5YkYV6s9_tM&vet=12ahUKEwjz4IqgxN37AhU80nMBHV6XANIQMygAegUIARDBAQ..i&docid=2dbVXm0BxTSlvM&w=1600&h=1082&q=chris%20martin%20picture%204k&ved=2ahUKEwjz4IqgxN37AhU80nMBHV6XANIQMygAegUIARDBAQ
 
