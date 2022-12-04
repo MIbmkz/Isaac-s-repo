@@ -12,7 +12,7 @@ This website shows Coldplay's History, their members and their music. This websi
 - The feature i added to all my htmls is a dropdown list which allow users to access all the htmls and also dropdown is the only option for mobile users.
 - The second feature i added is the fade in and fade out effect between html pages which pretty much adds a transition effect between html pages.
 - The last feature is the music player in the music slide which allows users to play the top 5 Coldplay's music in high quality while being ale to traverse other websites.
-## References
+## Credit
 - https://www.britannica.com/topic/Coldplay
 - https://en.wikipedia.org/wiki/Chris_Martin
 - https://en.wikipedia.org/wiki/Guy_Berryman
