@@ -7,7 +7,6 @@ This is a website solely to promote Coldplay's members, merch and tickets. This 
 This website shows Coldplay's History, their members and their music. This website is mainly for people who are really interested in Coldplay and want to learn more about them. Furthermore, other than knowing about Coldplay, they can also buy their merch or tickets to their latest tour know as the *Music of the Spheres*.
 - As a User of this website, i will definitely want to learn more about the members in the band "ColdPlay" and also know on their latest tour and their albums . By the end of this website i would want to know about the histories of Coldplay, how it started and how they all got together as a band.
 
-<--put wireframe link here-->
 ## Features
 - The feature i added to all my htmls is a dropdown list which allow users to access all the htmls and also dropdown is the only option for mobile users.
 - The second feature i added is the fade in and fade out effect between html pages which pretty much adds a transition effect between html pages.
@@ -29,6 +28,13 @@ Using the w3 Validator, i have corrected all my errors and also made sure that m
 
 
 ## Media Credit
+
+### Music links from spotify
+- https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b?si=6058a926373943c9
+- https://open.spotify.com/track/6RUKPb4LETWmmr3iAEQktW?si=f7871f9ea0484ec5
+- https://open.spotify.com/track/6nek1Nin9q48AVZcWs9e9D?si=b6c4dabdb59a4302
+- https://open.spotify.com/track/0FDzzruyVECATHXKHFs9eJ?si=b8e74d88ea304095
+- https://open.spotify.com/track/3RiPr603aXAoi4GHyXx0uy?si=9c49f6f1dcf84281
 ### index.html pictures
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.hdqwalls.com%2Fwallpapers%2Fcoldplay-rock-band-pc.jpg&imgrefurl=https%3A%2F%2Fhdqwalls.com%2Fcoldplay-rock-band-wallpaper&tbnid=xp0R-Fcir00uCM&vet=12ahUKEwiNw5H9w937AhXHj9gFHacDCvEQMygLegUIARDVAQ..i&docid=Nak8fpSsst4upM&w=3000&h=2249&q=coldplay%20wallpaper%204k&ved=2ahUKEwiNw5H9w937AhXHj9gFHacDCvEQMygLegUIARDVAQ
 
