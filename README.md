@@ -64,3 +64,5 @@ Using the w3 Validator, i have corrected all my errors and also made sure that m
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F8%2F8d%2FColdplay_-_A_Sky_Full_of_Stars_%2528Single%2529.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FA_Sky_Full_of_Stars&tbnid=fzEpFZvu0UMdiM&vet=12ahUKEwjlyZOyzN37AhX6KbcAHc8JBbUQMygAegUIARDmAQ..i&docid=Nok94l1alYzCvM&w=300&h=300&q=a%20sky%20full%20of%20stars&ved=2ahUKEwjlyZOyzN37AhX6KbcAHc8JBbUQMygAegUIARDmAQ
 
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fe%2Fe5%2FColdplay%252C_Hymn_for_the_Weekend%252C_Artwork.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHymn_for_the_Weekend&tbnid=zSVZXKViX01vVM&vet=12ahUKEwizqc65zN37AhVEBbcAHcSyC4AQMygAegUIARDdAQ..i&docid=ruq7cf_lFkT9OM&w=316&h=316&q=hymn%20for%20the%20weekend%20coldplay&ved=2ahUKEwizqc65zN37AhVEBbcAHcSyC4AQMygAegUIARDdAQ
+
+- https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F686024955714903792%2F&psig=AOvVaw0HVPoOlLR1rVY20ltHj_l1&ust=1670216036601000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICtg92V3_sCFQAAAAAdAAAAABAE
