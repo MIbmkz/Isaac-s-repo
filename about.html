@@ -50,6 +50,7 @@
             color: #B8B8B8;
         } 
         @media screen and (max-width: 987px){
+            /* Remove the text choices at 987px since it clumps up at <= 987px */
             .nav1 > ul{
                 display: none;
             }  
@@ -71,7 +72,7 @@
                 <li><a href="https://eustore.coldplay.com/" target = "_blank">Merch</a></li>
                 <li><a href="https://www.coldplay.com/tour/" target = "_blank">Tour Tickets</a></li>
             </ul>
-            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
+            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "icon-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
                 <!-- Submenu dropdown listing + links -->
                 <div class="sub-menu">

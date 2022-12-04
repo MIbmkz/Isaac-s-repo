@@ -42,6 +42,8 @@
             font-size: 400%;
             color: #a43552;
         }
+        /* Set width to 40% so that it takes up only the right side of the space for laptop view */
+        /* Align all items in the center of the box and in a column */
         .player {
             width: 40%;
             display: flex;
@@ -49,7 +51,7 @@
             flex-direction: column;
             justify-content: center;
         }
-            
+        /* Details for the music player. Playing x of y, track name etc. */
         .details {
             display: flex;
             align-items: center;
@@ -57,7 +59,7 @@
             justify-content: center;
             margin-top: 25px;
         }
-            
+        /* Editing the size of the display image when you play a music */
         .track-art {
             margin: 25px;
             height: 250px;
@@ -103,7 +105,7 @@
         .playpause-track:hover,
         .prev-track:hover,
         .next-track:hover {
-            opacity: 1.0;
+            opacity: 1;
         }
             
         /* Define the slider width so that it scales properly */
@@ -123,6 +125,7 @@
             height: 5px;
             background: black;
             opacity: 0.7;
+            /* Combine all the available transitions to 2s */
             -webkit-transition: .2s;
             transition: opacity .2s;
         }
@@ -153,12 +156,12 @@
         .volume_slider {
             width: 30%;
         }
-            
+        /* Add a padding to the timing of the music */
         .current-time,
         .total-duration {
             padding: 10px;
         }
-            
+        /* Add a padding to the volume sections */
         i.fa-volume-down,
         i.fa-volume-up {
             padding: 10px;
@@ -173,30 +176,35 @@
             cursor: pointer;
         }
         /* Start normal styling for music here */
+        /* Change font & color for header */
         .headd{
             color: white;
             text-align: center;
-
         }
+        /* Give a 100% width to the song list */
         .songs{
             width: 100%;
         }
+        /* Give a flex to the Whole list of header, music list and picture */
         .flexing{
             padding-bottom: 1%;
             background-color: #202c36;
             display: flex;
             flex-direction: row;
         }
+        /* Display images in a row */
         .flexing1{
             display: flex;
             flex-direction: row;
         }
+        /* Moving the list to the left to centralize it to the display box */
         .songs > ol{
             margin-left: 30%;
             color: white;
             text-align: left;
             font-size: 20px;
         }
+        /* Giving each of the list words a single background color and space between each other */
         .songs > ol > li{
             padding: 3%;
             background-color: #04354c;
@@ -206,18 +214,21 @@
         }
         @media screen and (max-width: 560px) {
             .songs > ol{
+                /* moving the margin respectively so that it is centralised on mobile */
                 margin-left: 22%;
                 color: white;
                 text-align: left;
                 font-size: 20px;
             }
             .songs > ol > li{
+                /* giving it more margin space and lesser width */
                 padding: 3%;
                 background-color: #04354c;
                 width: 70%;
                 margin: 1% 5% 1% 5%
             }
             .img1{
+                /* Make img bigger since it is displayed it columns */
                 width: 92%;
                 margin: 0 4% 0 4%;
             }
@@ -226,18 +237,23 @@
                 margin: 0 4% 0 4%;
             }
             .flexing{
+                /* Display all in column */
                 display: flex;
                 flex-direction: column;
             }
             .flexing1{
+                /* Display imgs in a column */
                 display:flex;
                 flex-direction: column;
             }
             .player {
+                /* Let player take up the whole mobile device width */
                 width: 100%;
             }
         }
         @media screen and (max-width: 717px){
+            /* This part is made because the player starts overlapping
+            the images at width 717px */
             .flexing1{
                 display:flex;
                 flex-direction: column;
@@ -272,7 +288,7 @@
                 <li><a href="https://eustore.coldplay.com/" target = "_blank">Merch</a></li>
                 <li><a href="https://www.coldplay.com/tour/" target = "_blank">Tour Tickets</a></li>
             </ul>
-            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
+            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "icon-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
                 <!-- Submenu dropdown listing + links -->
                 <div class="sub-menu">
@@ -313,9 +329,11 @@
         </div> 
         <div class = "flexing">
             <nav class = "songs">
+                <!-- Music list header -->
                 <h1 class = "headd">Top 5 Coldplay musics</h1>
                 <br>
                 <ol>
+                    <!-- List of top 5 music -->
                     <li>"Viva La Vida"</li>
                     <li>"Something just like this"</li>
                     <li>"Paradise"</li>
@@ -340,7 +358,7 @@
                     <div class="track-artist">Track Artist</div>
                 </div>
             
-                <!-- Define the section for displaying track buttons -->
+                <!-- section for displaying track buttons -->
                 <div class="buttons">
                     <div class="prev-track" onclick="prevTrack()">
                         <i class="fa fa-step-backward fa-2x"></i>
@@ -353,14 +371,14 @@
                     </div>
                 </div>
             
-                <!-- Define the section for displaying the seek slider-->
+                <!-- section for displaying the timing slider-->
                 <div class="slider_container">
                     <div class="current-time">00:00</div>
                     <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
                     <div class="total-duration">00:00</div>
                 </div>
             
-                <!-- Define the section for displaying the volume slider-->
+                <!-- section for displaying the volume slider-->
                 <div class="slider_container">
                     <i class="fa fa-volume-down"></i>
                     <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
@@ -368,7 +386,6 @@
                 </div>
             </div>
         </div>
-        <br>
         <footer class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter" target = "_blank"></a></li>
