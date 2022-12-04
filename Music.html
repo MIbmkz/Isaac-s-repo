@@ -20,20 +20,29 @@
             font-family: 'Poppins' , sans-serif;
             box-sizing: border-box;
         }
-        .bg5{
-            background-color: #202c36;
+        .centre{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            padding: 20%;
+            font-size: 5vw;
+            color: white;
         }
         .size{
             width: 100%;
             min-height: 100vh;
-            background-color: #202c36;
+            background-image: url("images/Stars\ background.gif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             color: #525252;
         }
         .centre{
             text-align: center;
             margin: 0;
             width: 100%;
-            padding: 0;
+            padding: 15%;
             font-family: 'Lobster', cursive;
             font-size: 400%;
             color: #a43552;
@@ -178,6 +187,8 @@
             width: 100%;
         }
         .flexing{
+            padding-bottom: 1%;
+            background-color: #202c36;
             display: flex;
             flex-direction: row;
         }
@@ -260,7 +271,7 @@
         }
     </style>
 </head>
-<body class = "bg5 animate-in beforeunload">
+<body class = "animate-in beforeunload">
     <div class="size">
         <nav class = "nav1">
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
@@ -307,6 +318,9 @@
                 </div>
             </div>
         </nav>
+        <div class="centre">
+            <h2 style="color: white; font-size: 40px;">Coldplay Music</h2>
+        </div> 
         <div class = "flexing">
             <nav class = "songs">
                 <h1 class = "headd">Top 5 Coldplay musics</h1>
