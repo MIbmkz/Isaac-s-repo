@@ -24,7 +24,11 @@
         .size{
             width: 100%;
             min-height: 100vh;
-            background-color:#202c36 ;
+            background-image: url("images/coldplaypage2wpp.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             color: #525252;
         }
         .nav1{
@@ -41,18 +45,20 @@
             text-align: center;
             margin: 0;
             width: 100%;
-            padding: 0;
-            font-family: 'Lobster', cursive;
-            font-size: 400%;
-            color: #a43552;
+            padding: 15%;
+            font-size: 5vw;
+            color: white;
         }
         .ffffont{
             font-family: 'Mulish', sans-serif;
-            width: 90%;
-            margin-left: 5%;
+
         }
         /* Flexboxes column styling */
         /* Flexbox 1 */
+        .column1{
+            padding: 4% 0;
+            background-color: #202c36;
+        }
         .flex1{
             margin-top: 5%;
             margin: 0;
@@ -85,6 +91,7 @@
         .flex1:first-of-type div:first-child{
             background-image: url("images/ChrisMartin.webp");
             z-index: 2;
+            margin:0 5% 0 5%;
         }
         @media all and (max-width: 414px) {
             .box1{
@@ -98,6 +105,10 @@
             .flex1 div { flex: 1; }
         }
         /* Flexbox 2 */
+        .column2{
+            padding: 4% 0;
+            background-color: #202c36;
+        }
         .flex2{
             margin: 0;
             display: flex;
@@ -129,6 +140,7 @@
         .flex2:first-of-type div:first-child{
             background-image: url("images/Guyberryman.webp");
             z-index: 2;
+            margin:0 5% 0 5%;
         }
         .flex2:nth-child(odd){
             flex-direction: row-reverse;
@@ -148,6 +160,10 @@
             .flex2 div { flex: 1; }
         }
         /* Flexbox 3 */
+        .column3{
+            padding: 4% 0;
+            background-color: #202c36;
+        }
         .flex3{
             margin: 0;
             display: flex;
@@ -179,6 +195,7 @@
         .flex3:first-of-type div:first-child{
             background-image: url("images/Jonnybuckland.webp");
             z-index: 2;
+            margin:0 5% 0 5%;
         }
         @media all and (max-width: 414px) {
             .box3{
@@ -192,6 +209,10 @@
             .flex3 div { flex: 1;}
         }
         /* Flexbox 4 */
+        .column4{
+            padding: 4% 0;
+            background-color: #202c36;
+        }
         .flex4{
             margin: 0;
             display: flex;
@@ -223,6 +244,7 @@
         .flex4:first-of-type div:first-child{
             background-image: url("images/Willchampion.jpg");
             z-index: 2;
+            margin:0 5% 0 5%;
         }
         .flex4:nth-child(odd){
             flex-direction: row-reverse;
@@ -295,6 +317,9 @@
                 </div>
             </div>
         </nav>
+        <div class="centre">
+            <h2 style="color: white; font-size: 40px;">Coldplay Members</h2>
+        </div> 
         <div class = "ffffont">
             <div class="column1">
                 <figure class="flex1">
@@ -305,6 +330,7 @@
                     </div>
                 </figure>   
             </div>
+            <br><br><br><br>
             <div class="column2">
                 <figure class="flex2">
                     <div></div>
@@ -314,6 +340,7 @@
                     </div>
                 </figure>   
             </div>
+            <br><br><br><br>
             <div class="column3">
                 <figure class="flex3">
                     <div></div>
@@ -323,6 +350,7 @@
                     </div>
                 </figure>   
             </div>
+            <br><br><br><br>
             <div class="column4">
                 <figure class="flex4">
                     <div></div>
@@ -333,7 +361,6 @@
                 </figure>   
             </div>
         </div>
-        <br><br>
         <footer class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter" target = "_blank"></a></li>

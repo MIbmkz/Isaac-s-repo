@@ -12,6 +12,14 @@ This website shows Coldplay's History, their members and their music. This websi
 - The feature i added to all my htmls is a dropdown list which allow users to access all the htmls and also dropdown is the only option for mobile users.
 - The second feature i added is the fade in and fade out effect between html pages which pretty much adds a transition effect between html pages.
 - The last feature is the music player in the music slide which allows users to play the top 5 Coldplay's music in high quality while being ale to traverse other websites.
+
+## Technologies Used
+- Html is used to create my words and the layout of my pages
+- Css is used to style and apply fonts and create my
+- javascript is used to add all my features such as dropdown, page transitions and music player
+  
+## Testing
+Using the w3 Validator, i have corrected all my errors and also made sure that my code is perfectly fine. Other than that my media query is working in all sizes including mobile phones and tablets. I used to have a dropdown bug where my dropdown doesnt come out when i click the icon but it is now fixed and my website is fully functional.
 ## Credit
 - https://www.britannica.com/topic/Coldplay
 - https://en.wikipedia.org/wiki/Chris_Martin
@@ -19,8 +27,8 @@ This website shows Coldplay's History, their members and their music. This websi
 - https://en.wikipedia.org/wiki/Jonny_Buckland
 - https://en.wikipedia.org/wiki/Will_Champion
 
-## Media
 
+## Media Credit
 ### index.html pictures
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.hdqwalls.com%2Fwallpapers%2Fcoldplay-rock-band-pc.jpg&imgrefurl=https%3A%2F%2Fhdqwalls.com%2Fcoldplay-rock-band-wallpaper&tbnid=xp0R-Fcir00uCM&vet=12ahUKEwiNw5H9w937AhXHj9gFHacDCvEQMygLegUIARDVAQ..i&docid=Nak8fpSsst4upM&w=3000&h=2249&q=coldplay%20wallpaper%204k&ved=2ahUKEwiNw5H9w937AhXHj9gFHacDCvEQMygLegUIARDVAQ
 
@@ -36,6 +44,8 @@ This website shows Coldplay's History, their members and their music. This websi
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2793839.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2Fcoldplay-hd-wallpaper&tbnid=qhbPdvpvKSO3LM&vet=12ahUKEwjnkPySxN37AhWai9gFHSFGA2YQMygDegUIARDEAQ..i&docid=ayESNkenKKoXGM&w=2560&h=1440&q=coldplay%20performing%20wallpaper%204k&ved=2ahUKEwjnkPySxN37AhWai9gFHSFGA2YQMygDegUIARDEAQ
 
 ### memberinfo.html pictures
+- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fcoldplay-hd-wallpaper&psig=AOvVaw2XkLInB7IAkWeVn8Q7as80&ust=1670211305030000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjl8IyE3_sCFQAAAAAdAAAAABAE
+  
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1988511.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2Fchris-martin-wallpapers&tbnid=qwx5YkYV6s9_tM&vet=12ahUKEwjz4IqgxN37AhU80nMBHV6XANIQMygAegUIARDBAQ..i&docid=2dbVXm0BxTSlvM&w=1600&h=1082&q=chris%20martin%20picture%204k&ved=2ahUKEwjz4IqgxN37AhU80nMBHV6XANIQMygAegUIARDBAQ
 
 - https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.businessinsider.in%2Fphoto%2F64105280%2Fthe-36-richest-musicians-in-britain%2F31-guy-berryman-coldplay-82-million-.jpg&imgrefurl=https%3A%2F%2Fwww.businessinsider.in%2FThe-36-richest-musicians-in-Britain%2F31-Guy-Berryman-Coldplay-82-million-%2Fslideshow%2F64105280.cms&tbnid=1frEvk7OuUjnwM&vet=12ahUKEwiWk5enxN37AhWMjNgFHaHbAPoQMygBegUIARCkAQ..i&docid=05AeyQjXwVoF1M&w=800&h=600&q=guy%20berryman%20picture%204k&ved=2ahUKEwiWk5enxN37AhWMjNgFHaHbAPoQMygBegUIARCkAQ
