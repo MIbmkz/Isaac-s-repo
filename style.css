@@ -1,4 +1,3 @@
-/* Testing java */
 .animate-in {
     -webkit-animation: fadeIn .5s ease-in;
     animation: fadeIn .5s ease-in;
@@ -27,7 +26,12 @@ body {
 body.fade {
     opacity: 0;
 }
-
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
 .nav1{
     background: #747C82;
     width: 100%;
@@ -198,4 +202,24 @@ ul.sort{
 }
 html{
     scroll-behavior: smooth;
+}
+.readm{
+    text-decoration: none;
+    color: #feecf9;
+    padding: 0.5%;
+    background-color: #fb3a64;
+    border: 1px solid #fb3a64; 
+}
+.readm:hover{
+    background-color: #feecf9;
+    color: #fb3a64;
+    transition-duration: 0.4s;
+}
+.img1{
+    width: 54%;
+    height: 40%;
+}
+.img2{
+    width: 49%;
+    height: 45%;
 }

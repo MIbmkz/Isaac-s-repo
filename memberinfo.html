@@ -14,13 +14,7 @@
     <link rel="icon" type="image/x-icon" href="/images/Topicon.png">
     <title>ColdPlay Website</title>
     <style>
-        /* button starts here */
-        *{
-            margin:0;
-            padding:0;
-            font-family: 'Poppins' , sans-serif;
-            box-sizing: border-box;
-        }
+        /* Background sizing */
         .size{
             width: 100%;
             min-height: 100vh;
@@ -31,16 +25,7 @@
             background-attachment: fixed;
             color: #525252;
         }
-        .nav1{
-            margin-bottom: 3%;
-            background: #747C82;
-            width: 100%;
-            padding: 10px 10%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-        }
+        /* Centralising the main header */
         .centre{
             text-align: center;
             margin: 0;
@@ -49,11 +34,13 @@
             font-size: 5vw;
             color: white;
         }
+        /* Giving the column a 98% width for some extra side parting */
         .ffffont{
             font-family: 'Mulish', sans-serif;
             width: 98%;
             margin: 0 1% 0 1%;
         }
+        /* All 4 flexboxes are the same as the one in index.html */
         /* Flexboxes column styling */
         /* Flexbox 1 */
         .column1{
@@ -95,9 +82,6 @@
             margin:0 5% 0 5%;
         }
         @media all and (max-width: 414px) {
-            .box1{
-                opacity: 0;
-            }
             .flex1 { flex-direction: column; } 
             .flex1 div:first-child { min-height: 200px; }
         }
@@ -144,12 +128,11 @@
             margin:0 5% 0 5%;
         }
         .flex2:nth-child(odd){
+            /* Use this so that the picture is on the right and text on the left */
             flex-direction: row-reverse;
         }
         @media all and (max-width: 414px) {
-            .box2{
-                opacity: 0;
-            }
+            /* Rechanging it back to a column since it was reversed before */
             .flex2:nth-child(odd){
                 flex-direction: column;
             }
@@ -199,9 +182,6 @@
             margin:0 5% 0 5%;
         }
         @media all and (max-width: 414px) {
-            .box3{
-                opacity: 0;
-            }
             .flex3 { flex-direction: column; } 
             .flex3 div:first-child { min-height: 200px; }
         }
@@ -251,9 +231,6 @@
             flex-direction: row-reverse;
         }
         @media all and (max-width: 414px) {
-            .box4{
-                opacity: 0;
-            }
             .flex4:nth-child(odd){
                 flex-direction: column;
             }
@@ -273,7 +250,9 @@
 </head>
 <body class = "animate-in beforeunload">
     <div class="size">
-        <nav class = "nav1">
+        <!-- This is header start -->
+        <nav class = "nav1"> 
+            <!-- Header infos -->
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -283,8 +262,9 @@
                 <li><a href="https://eustore.coldplay.com/" target = "_blank">Merch</a></li>
                 <li><a href="https://www.coldplay.com/tour/" target = "_blank">Tour Tickets</a></li>
             </ul>
-            <img src = "images/icon.jpg" alt = "Dropdown icon" class = "user-pic" onclick="toggleMenu()">
+            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
+                <!-- Submenu dropdown listing + links -->
                 <div class="sub-menu">
 
                     <hr>
@@ -314,14 +294,16 @@
                         <p><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;Tickets</p>
                         <span>></span>
                     </a>
-
                 </div>
             </div>
         </nav>
+        <!-- End of header -->
         <div class="centre">
+            <!-- main header -->
             <h2 style="color: white; font-size: 40px;">Coldplay Members</h2>
         </div> 
         <div class = "ffffont">
+            <!-- All 4 flexboxes here -->
             <div class="column1">
                 <figure class="flex1">
                     <div></div>
@@ -363,6 +345,7 @@
             </div>
         </div>
         <br>
+        <!-- Footer start -->
         <footer class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter" target = "_blank"></a></li>
@@ -372,5 +355,6 @@
             </ul>
             <p style = "font-size: 10px;">Author: Isaac</p>
         </footer>
+        <!-- Footer end -->
     </div>
 </html>

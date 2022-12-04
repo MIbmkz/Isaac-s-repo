@@ -16,13 +16,7 @@
 
     <title>ColdPlay Website</title>
     <style>
-        /* button starts here */
-        *{
-            margin:0;
-            padding:0;
-            font-family: 'Poppins' , sans-serif;
-            box-sizing: border-box;
-        }
+        /* Background sizing */
         .size{
             width: 100%;
             min-height: 100vh;
@@ -33,12 +27,14 @@
             background-attachment: fixed;
             color: white;
         }
+        /* Alignment of the word Coldplay to the centre */
         .center {
             text-align: center;
             margin: auto;
             width: 100%;
             padding: 15%;
         }
+        /* Creating a text space for about explanation */
         .boxes{
             padding-top: 2%;
             padding-bottom: 2%;
@@ -46,8 +42,9 @@
             width: 100%;
             background-color:#202c36;
         }
+        /* Editing so that the paragraph is fully centralised with 5% margin on the sides */
         .boxes p{
-            margin-left: 5%;
+            margin: 0 5% 0 5%;
             width: 90%;
             text-align: center;
             color: #B8B8B8;
@@ -62,8 +59,10 @@
 </head>
 <body class = "animate-in beforeunload">
     <div class="size">
-        <nav class = "nav1">
-            <h1 style = "font-family:'Lobster', cursive;color:white;">ColdPlay</h1>
+        <!-- This is header start -->
+        <nav class = "nav1"> 
+            <!-- Header infos -->
+            <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -72,12 +71,15 @@
                 <li><a href="https://eustore.coldplay.com/" target = "_blank">Merch</a></li>
                 <li><a href="https://www.coldplay.com/tour/" target = "_blank">Tour Tickets</a></li>
             </ul>
-            <img src = "images/icon.jpg" alt = "Dropdown icon" class = "user-pic" onclick="toggleMenu()">
+            <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
+                <!-- Submenu dropdown listing + links -->
                 <div class="sub-menu">
 
                     <hr>
-                    <a href = "index.html" class = "sub-menu-link">    
+
+                    <a href = "index.html" class = "sub-menu-link">
+                        
                         <p><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;Main Page</p>
                         <span>></span>
                     </a>
@@ -101,14 +103,16 @@
                         <p><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;Tickets</p>
                         <span>></span>
                     </a>
-
                 </div>
             </div>
-        </nav>    
+        </nav>
+        <!-- End of header -->  
         <div class="center">
+            <!-- Main header -->
             <h2 style="color: #DEDDBF; font-size: 40px;">About Coldplay</h2>
-        </div>             
+        </div>                
         <div class = "boxes">
+            <!-- Text for the text space given -->
             <p style = "font-family: 'M PLUS Rounded 1c', sans-serif;; font-size: 20px;">
                 Coldplay’s full-length debut Parachutes (2000) sold millions on the strength of
                 Martin’s vocals and such singles as the bittersweet “Yellow.” Parachutes earned 
@@ -124,9 +128,11 @@
             </p>
         </div>
         <div class="center">
+            <!-- extra space for text -->
             <h2 style="color: #DEDDBF; font-size: 40px;">Founded in 1998</h2>
         </div>  
         <div class = "boxes">
+            <!-- Another text for the text space -->
             <p style = "font-family: 'M PLUS Rounded 1c', sans-serif;; font-size: 20px;">
                 The band’s 2008 release, Viva la Vida, 
                 produced in part by Brian Eno, topped the charts in the United States and the United 
@@ -143,6 +149,7 @@
                 to reach the top spot on the British album chart.
             </p>
         </div>
+        <!-- Footer Start -->
         <footer class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter" target = "_blank"></a></li>
@@ -152,5 +159,6 @@
             </ul>
             <p style = "font-size: 10px;">Author: Isaac</p>
         </footer>
+        <!-- Footer end -->
     </div>
 </html>

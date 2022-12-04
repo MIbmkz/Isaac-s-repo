@@ -16,14 +16,8 @@
     <link rel="icon" type="image/x-icon" href="/images/Topicon.png">
     <title>ColdPlay Website</title>
     <style>
-        /* button starts here */
-        *{
-            margin:0;
-            padding:0;
-            font-family: 'Poppins' , sans-serif;
-            box-sizing: border-box;
-        }
-        .size{
+        /* Background sizing */
+        .size{ 
             width: 100%;
             min-height: 100vh;
             background-image: url("images/all4tgtpic2.jpg");
@@ -33,6 +27,7 @@
             background-attachment: fixed;
             color: #525252;
         }
+        /* To align text in the centre of the screen */
         .centre{
             text-align: center;
             margin: 0;
@@ -41,6 +36,7 @@
             font-size: 5vw;
             color: white;
         }
+        /* Make text bigger */
         .tour{
             text-align: center;
             margin: 0;
@@ -54,18 +50,18 @@
             display: flex;
             margin-bottom: 2rem;
         }
-
+        /* The first <div> inside the module is empty, but will be filled with a background image */
         .flex div:first-child {
             flex: 1;
             background-size: cover;
             background-position: center;
         }
-
+        /* This second div will be twice as wide as the first because of the flex:2 */
         .flex div:last-child {
             margin: 1rem;
             flex: 2;
         }
-
+        /* Styling the text */
         .flex h3 {
             font-size: 1.5rem;
             margin-top: 0;
@@ -77,32 +73,24 @@
             font-weight: 400;
             color:white;
         }
+        /* To ensure that the last paragraph has no margin so that it doesnt increase the height */
         .flex p:last-of-type {
             margin-bottom: 0;
         }
+        /* the module elements given a background img */
         .flex:first-of-type div:first-child {
             background-image: url("images/descriptionpageimage.jpg");
             z-index: 2;
             border: 3px dotted #a43552;
             margin:0 5% 0 5%;
         }
+        /* increase padding to the whole flexbox and a bg color */
         .column{
             padding: 5% 0;
             background-color: #747C82;
         }
-        .readm{
-            text-decoration: none;
-            color: #feecf9;
-            padding: 0.5%;
-            background-color: #fb3a64;
-            border: 1px solid #fb3a64; 
-        }
-        .readm:hover{
-            background-color: #feecf9;
-            color: #fb3a64;
-            transition-duration: 0.4s;
-        }
         @media all and (max-width: 414px) {
+            /* Flexbox the pics in a column to fit the mobile picture */
             .flex { flex-direction: column; } 
             .flex div:first-child { min-height: 200px; }
         }
@@ -110,6 +98,7 @@
         @media all and (max-width: 600px) {
             .flex div { flex: 1; }
         }
+        /* Giving the album a display space */
         .album{
             padding: 3%;
             background-color: #747C82;
@@ -118,6 +107,7 @@
             font-size: 100%;
             color: white;
         }
+        /* Width for the album pics to make sure its evenly seperated */
         .container {
             position: relative;
             text-align: center;
@@ -133,22 +123,27 @@
             font-size: 15px;
             font-family: 'Nerko One', cursive;
          }
+         /* Display album pics in a row */
          .fleeex{
             display: flex;
             flex-direction: row;
          }
+         /* Give a curved radius to the album pics */
          img{
             border-radius: 3%;
          }
+         /* Top and bottom borders for text for visual appeal */
          .toppers{
             border-top: 2px solid #ab8efc;
             border-bottom: 2px solid #ab8efc;
          }
         @media screen and (max-width: 414px) { 
+            /* Flex the pics in a column for mobile devices */
             .fleeex{
                 display: flex;
                 flex-direction: column;
             }
+            /* Changing the size to make sure it fits the mobile device */
             .container {
                 position: relative;
                 text-align: center;
@@ -158,6 +153,7 @@
             }     
         }
         @media screen and (max-width: 987px){
+            /* Removing the text choices at this px since it clumps up from <= 987px onwards */
             .nav1 > ul{
                 display: none;
             }  
@@ -168,6 +164,7 @@
     <div class="size">
         <!-- This is header start -->
         <nav class = "nav1"> 
+            <!-- Header infos -->
             <h1 style = "font-family:'Lobster', cursive; color:white;">ColdPlay</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -179,6 +176,7 @@
             </ul>
             <img src = "images/icon.jpg" alt = "Dropdown Icon" class = "user-pic" onclick="toggleMenu()">
             <div class="sub-menu-wrap" id = "subMenu">
+                <!-- Submenu dropdown listing + links -->
                 <div class="sub-menu">
 
                     <hr>
@@ -215,6 +213,7 @@
         <div class="centre">
             <h1 style = "font-family:'Lobster', cursive;">ColdPlay</h1>
         </div>
+        <!-- Flexbox for the about -->
         <div class="column">
             <figure class="flex">
                 <div></div>
@@ -225,11 +224,13 @@
                 </div>
             </figure>   
         </div> 
+        <!-- To display on their tour and link to tickets -->
         <div class="tour">
             <h1 class = "toppers" style = "font-family: 'Times New Roman', Times, serif; font-size: 220%;">Music <span style="font-family: 'Dancing Script', cursive;">of the</span> Spheres</h1>
             <h1>ColdPlay is now Traversing around the world to meet all their fans</h1>
             <a style = "font-family: 'Karla', sans-serif; font-size: 75%;" class = "readm" href = "https://www.coldplay.com/tour/" target = "_blank">Get tickets Here</a>
         </div>
+        <!-- Album display to show the pictures and also link to spotify -->
         <div class="album">
             <h1 style = "text-align: center;">Popular Coldplay Albums</h1>
             <div class="fleeex">
@@ -249,11 +250,13 @@
             <br>
             <h2 style = "text-align: center;">Click on the images to listen now on Spotify!</h2>
         </div>
+        <!-- To give easier access to coldplay top 5 music if they want -->
         <div class="tour">
             <h1>Listen to Coldplay's Top 5 music in the world here!</h1>
             <a style = "font-family: 'Karla', sans-serif; font-size: 75%;" class = "readm" href = "Music.html">Listen now</a>
         </div>
-    
+        
+        <!-- Footer start -->
         <footer class="under">
             <ul class = "sort">
                 <li class = "li1"><a href="https://twitter.com/coldplay?lang=en" class="z fa fa-twitter" target = "_blank"></a></li>
@@ -263,5 +266,6 @@
             </ul>
             <p style = "font-size: 10px;">Author: Isaac</p>
         </footer>
+        <!-- Footer end -->
     </div>
 </html>
