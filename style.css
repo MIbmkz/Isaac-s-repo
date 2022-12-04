@@ -1,14 +1,16 @@
+/* Animation transition for pages */
+/* gives a fade in transition for 0.5 seconds between pages */
 .animate-in {
     -webkit-animation: fadeIn .5s ease-in;
     animation: fadeIn .5s ease-in;
 }
-
+/* same thing but animated while leaving page instead */
 .animate-out {
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
     opacity: 0;
 }
-
+/* Keyframes for the functions fadeIN */
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -18,20 +20,15 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
-body {
-    opacity: 1;
-    transition-duration: 0.7s;
-    transition-property: opacity;
-}
-body.fade {
-    opacity: 0;
-}
+
+/* Applying 0 margin and padding to all htmls */
 *{
     margin:0;
     padding:0;
     font-family: 'Poppins' , sans-serif;
     box-sizing: border-box;
 }
+/* Displaying of text buttons in header with a space between */
 .nav1{
     background: #747C82;
     width: 100%;
@@ -41,35 +38,39 @@ body.fade {
     justify-content: space-between;
     position: relative;
 }
-.icon{
-    width: 120px;
-}
-.user-pic{
+/* Giving a radius to the icon for drop down */
+.icon-pic{
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
     margin-left: 30px;
 }
-.user-pic:hover{
+/* Hover over the icon */
+.icon-pic:hover{
     opacity: 0.5;
 }
+/* align all the items in the header to the right other than the main word "ColdPlay" */
 .nav1 ul{
     width: 100%;
     text-align: right;
 }
+/* Display inline block for it to be displayed in a line and list style none to remove point form */
 .nav1 ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
+/* Give a color to the links and remove underline */
 .nav1 ul li a{
     color: #fff;
     text-decoration: none;
 }
+/* Give a hover effect when mouse hover overs it */
 .nav1 ul li a:hover{
     color:red;
     transition-duration: 0.5s;
 }
+/* The dropdown is given max height of 0px so that it is hidden */
 .sub-menu-wrap{
     z-index: 4;
     position: absolute;
@@ -80,27 +81,19 @@ body.fade {
     overflow: hidden;
     transition: max-height 0.5s;
 }
+/* Increases the max-height which will allow the dropdown menu to show itself */
 .sub-menu-wrap.open-menu{
     z-index: 4;
     max-height: 400px;
 }
+/* Giving the dropdown menu a backgroud color, padding and margin */
 .sub-menu{
     background: #fff;
     padding: 20px;
     margin: 10px;
 }
-.user-info{
-    display: flex;
-    align-items: center;
-}
-.user-info h3{
-    font-weight: 500;
-}
-.user-info img{
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
+/* Give a small height and margin to the line that is placed above all the
+items in the drop down menu */
 .sub-menu hr{
     border: 0;
     height: 1px;
@@ -108,6 +101,7 @@ body.fade {
     background: #ccc;
     margin: 15px 0 10px;
 }
+/* Styling of links in the drop down menu */
 .sub-menu-link{
     display: flex;
     align-items: center;
@@ -115,19 +109,24 @@ body.fade {
     color: #525252;
     margin: 12px 0;
 }
+/* Givingn width to the text in dropdown menu */
 .sub-menu-link p{
     width: 100%;
 }
+/* Giving a size to the arrow in the dropdown menu */
 .sub-menu-link span{
     font-size: 22px;
     transition: transform 0.5s;
 }
+/* Giving an animation of 5px difference when a mouse hovers over the arrow */
 .sub-menu-link:hover span{
     transform: translateX(5px);
 }
+/* Giving an animation of 5px difference when a mouse hovers over the text  */
 .sub-menu-link:hover p{
     font-weight: 600;
 }
+/* Giving color to the social media icons in the footer */
 .fa-twitter {
     color: white;
 }
@@ -140,6 +139,7 @@ body.fade {
 .fa-reddit{
     color: white;
 }
+/* Setting padding font size and removin decorations for each icon respectively */
 .fa-twitter{
     padding: 25px;
     font-size: 17px;
@@ -166,6 +166,7 @@ body.fade {
     text-align: center;
     text-decoration: none;
 }
+/* Setting hover effect for each icon with their respective social media colors */
 .fa-twitter:hover {
     background-color:#55ACEE;
     transition-duration: 0.5s;
@@ -182,27 +183,33 @@ body.fade {
     background-color: #ff5700;
     transition-duration: 0.5s;
 }
+/* Give font size to the dropdown menu icons */
 .fa-solid{
     font-size: 30px;
 }
+/* Footer display box */
 .under{
     padding: 1%;
     text-align: center;
     background: #747C82;
     color: white;
 }
+/* Gicing no list style so that the points are not shown */
 ul.sort{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+/* Inline-block to make it display in a straight line */
 .li1{
     display: inline-block;
     margin: 0 8%;
 }
+/* Makes the pages smoother */
 html{
     scroll-behavior: smooth;
 }
+/* For links in the index.html */
 .readm{
     text-decoration: none;
     color: #feecf9;
@@ -210,11 +217,13 @@ html{
     background-color: #fb3a64;
     border: 1px solid #fb3a64; 
 }
+/* Give a hover effect to the links */
 .readm:hover{
     background-color: #feecf9;
     color: #fb3a64;
     transition-duration: 0.4s;
 }
+/* Images in music */
 .img1{
     width: 54%;
     height: 40%;
